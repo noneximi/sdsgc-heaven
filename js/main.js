@@ -1,3 +1,3 @@
 $(function (){
-  $("#header").load("header.html");
+  $("#header").load("https://noneximi.github.io/sdsgc-heaven/header.html");
 });
