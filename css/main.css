@@ -106,16 +106,23 @@ textarea {
    #topheader {
     padding: 50px 20px;
    }
-   .gtipsbox {
-     display: none;
-   }
 
-   .generaltips {
-     color: rgb(255, 255, 255); font-size: 16px; line-height: 16px; padding: 6px; border-radius: 0px; font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; font-weight: 400; text-decoration: none; font-style: normal; font-variant: normal; text-transform: none; background-image: linear-gradient(rgb(0, 158, 255) 0%, rgb(0, 158, 255) 100%); box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px; border: 1px solid rgb(255, 255, 255); display: inline-block;}
-     .myButton:hover {
-    background: #009EFF; }
-    .myButton:active {
-    background: #009EFF; }
+   .gtipsbox {
+     display: none; }
+   .button1 {
+     color: rgb(255, 255, 255); display: inline-block; font-size: 16px; line-height: 16px; padding: 6px; border-radius: 0px; font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+     font-weight: 400; font-style: normal; font-variant: normal; text-transform: none; border: 1px solid;}
+     .button1:hover {
+       background: #009EFF; }
+    .button1:active {
+      background: #009EFF; }
+    .button2 {
+      color: rgb(255, 255, 255); font-size: 16px; line-height: 16px; padding: 6px; border-radius: 0px; font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; font-weight: 400;
+      font-style: normal; font-variant: normal; border: 1px solid rgb(255, 255, 255); display: inline-block;}
+    .button2:hover {
+      background: #B20000; }
+    .button2:active {
+      background: #B20000; }
 
 
 /* ==========================================================================
