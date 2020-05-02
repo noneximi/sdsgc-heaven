@@ -2,7 +2,7 @@ $(function (){
   $("#header").load("https://noneximi.github.io/sdsgc-heaven/header.html");
 });
 
-function guideshow(id) {
+function generalguideshow(id) {
   var arrayOfElements = document.getElementsByClassName('gtipsbox');
   var lengthOfArray = arrayOfElements.length;
 
