@@ -96,18 +96,16 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-
-
-
-
-
-
-
-
-
-
-
-
+   #topheader {
+   background-color: #FFFFFF;
+   background-image: url("https://www.pinclipart.com/picdir/big/146-1461356_jericho-14-seven-deadly-sins-jericho-fan-art.png");
+   background-repeat: no-repeat;
+   background-attachment: scroll;
+   background-position: -50px -50px;
+   }
+   #topheader {
+    padding: 50px 20px;
+   }
 
 
 
