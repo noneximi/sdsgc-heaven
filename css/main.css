@@ -107,14 +107,20 @@ textarea {
     padding: 50px 20px;
    }
 
+/*boxes that display when corresponding linked button are clicked on*/
    .gtipsbox {
      display: none; }
+     .gbbox {
+       display: none; }
+
+    /*blue button*/
      .button1 {
   color: rgb(255, 255, 255); font-size: 16px; line-height: 16px; padding: 6px; border-radius: 0px; font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; font-weight: 400; text-decoration: none; font-style: normal; font-variant: normal; text-transform: none; background-image: linear-gradient(rgb(0, 187, 255) 0%, rgb(0, 187, 255) 100%); box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px; border: 1px solid rgb(255, 255, 255); display: inline-block;}
   .button1:hover {
   background: #00BBFF; }
   .button1:active {
   background: #00BBFF; }
+  /*red button*/
       .button2 {
   color: rgb(255, 255, 255); font-size: 16px; line-height: 16px; padding: 6px; border-radius: 0px; font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; font-weight: 400; text-decoration: none; font-style: normal; font-variant: normal; text-transform: none; background-image: linear-gradient(rgb(178, 0, 0) 0%, rgb(178, 0, 0) 100%); box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px; border: 1px solid rgb(255, 255, 255); display: inline-block;}
   .button2:hover {
