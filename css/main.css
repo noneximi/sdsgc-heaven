@@ -97,6 +97,7 @@ textarea {
    ========================================================================== */
 
    body {
+     min-height: 1080px;
   background: url('https://raw.githubusercontent.com/noneximi/sdsgc-heaven/master/webbackgroundimg.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
