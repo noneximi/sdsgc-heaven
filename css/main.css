@@ -99,11 +99,10 @@ textarea {
    body {
      background-image: url('https://raw.githubusercontent.com/noneximi/sdsgc-heaven/master/webbackgroundimg.jpg');
      background-color: #ffffff;
-     height: 150px;
      background-position: 0 0;
      background-repeat: repeat-y;
      background-size: cover;
-     position: relative;
+     position: absolute;
    }
 
    #topheader {
