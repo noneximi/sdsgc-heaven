@@ -41,7 +41,6 @@ function crimguideshow(id) {
 	var	$window = $(window),
 		$body = $('body'),
 		$wrapper = $('#wrapper'),
-		$header = $('#header'),
 		$main = $('#main'),
 
 	// Breakpoints.
@@ -83,18 +82,5 @@ function crimguideshow(id) {
 
 		}
 			};
-
-		// Initialize.
-
-			// Hide main, articles.
-				$main.hide();
-				$main_articles.hide();
-
-			// Initial article.
-				if (location.hash != ''
-				&&	location.hash != '#')
-					$window.on('load', function() {
-						$main._show(location.hash.substr(1), true);
-					});
 
 })(jQuery);
