@@ -105,6 +105,11 @@ textarea {
   background-size: cover;
 }
 
+  .content {
+    margin: auto;
+    padding: 10px;
+  }
+
    #topheader {
     padding: 50px 20px;
    }
