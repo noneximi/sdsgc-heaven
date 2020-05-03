@@ -105,8 +105,9 @@ textarea {
   background-size: cover;
 }
 
-  .content {
-    margin: auto;
+  #page-wrap {
+    max-width: 1440;
+    margin: 0 auto;
     padding: 10px;
   }
 
