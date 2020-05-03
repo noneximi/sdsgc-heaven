@@ -5,7 +5,7 @@
 */
 
 $(function (){
-  $("#header").load("https://noneximi.github.io/sdsgc-heaven/header.html");
+  $("#topheader").load("https://noneximi.github.io/sdsgc-heaven/header.html");
 });
 
 function generalguideshow(id) {
