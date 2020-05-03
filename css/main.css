@@ -97,11 +97,11 @@ textarea {
    ========================================================================== */
 
    #topheader {
-   background-color: #FFFFFF;
-   background-image: url("https://www.pinclipart.com/picdir/big/146-1461356_jericho-14-seven-deadly-sins-jericho-fan-art.png");
+   background-color: transparent;
+   background-image: url("https://img9.uhdpixel.com/wp/w/9/jericho-nanatsu-no-taizai-w920.jpg");
    background-repeat: no-repeat;
    background-attachment: scroll;
-   background-position: -50px -50px;
+   background-position: 50% 25%;
    }
    #topheader {
     padding: 50px 20px;
