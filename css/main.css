@@ -96,15 +96,13 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-   body {
-     background-image: url('https://raw.githubusercontent.com/noneximi/sdsgc-heaven/master/webbackgroundimg.jpg');
-     background-color: #ffffff;
-     background-position: 0 0;
-     background-repeat: repeat-y;
-     background-size: cover;
-     width: 100%;
-     position: absolute;
-   }
+   html {
+  background: url('https://raw.githubusercontent.com/noneximi/sdsgc-heaven/master/webbackgroundimg.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
    #topheader {
     padding: 50px 20px;
