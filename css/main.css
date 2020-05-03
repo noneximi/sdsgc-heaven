@@ -102,6 +102,7 @@ textarea {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-position 0 0;
 }
 
    #topheader {
