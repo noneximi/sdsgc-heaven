@@ -96,7 +96,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-   html {
+   body {
   background: url('https://raw.githubusercontent.com/noneximi/sdsgc-heaven/master/webbackgroundimg.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
