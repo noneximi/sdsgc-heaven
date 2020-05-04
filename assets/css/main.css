@@ -109,6 +109,11 @@ input, select, textarea {
 			transition: none !important;
 		}
 
+		/*User CSS*/
+		iframe {
+			width: 100%;
+		}
+
 /* Type */
 
 	html {
