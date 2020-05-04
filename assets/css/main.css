@@ -701,10 +701,7 @@ input, select, textarea {
 		}
 
 			.image.main img {
-				display: block;
-  			margin-left: auto;
-  			margin-right: auto;
-				width: 75%;
+				width: 100%;
 			}
 
 		@media screen and (max-width: 736px) {
