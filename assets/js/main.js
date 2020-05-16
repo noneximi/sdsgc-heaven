@@ -7,6 +7,9 @@
 $(function (){
   $("#mainheader").load("https://noneximi.github.io/sdsgc-heaven/mainheader.html");
 });
+$(function (){
+  $("#phpconnect").load("https://noneximi.github.io/sdsgc-heaven/php_sqlserv.php");
+});
 
 (function($) {
 
