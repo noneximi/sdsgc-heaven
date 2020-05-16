@@ -33,7 +33,7 @@
 					if ($conn->connect_error) {
 					  die("Connection failed: " . $conn->connect_error);
 					}
-					echo "Connected successfully";
+					echo "Connected to $dbname successfully (pls ignore this mssg)";
 					?>
 				</div>
 				<div id = "mainheader"></div>
