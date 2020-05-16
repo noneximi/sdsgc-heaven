@@ -69,8 +69,8 @@
 							  die("Connection failed: " . $conn->connect_error);
 							}
 
-							$sqlcc = "SELECT CharacterName, Type, Combat Class FROM BaseCharacterStats ORDER BY Combat Class";
-							$result = $conn->query($sqlcc);
+							$sql = "SELECT CharacterName, Type, Combat Class FROM aae99dbcx92f7n09.BaseCharacterStats ORDER BY Combat Class";
+							$result = $conn->query($sql);
 							if ($result->num_rows > 0) {
 						  // output data of each row
 						  while($row = $result->fetch_assoc()) {
