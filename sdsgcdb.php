@@ -46,15 +46,26 @@
 				 </div>
 
 					<nav>
-						<button type = "button" class="button primary" onclick = "window.location.href = '#search';">TBA <i class="fas fa-user-astronaut fa-lg"></i> Season 2</button>
+						<button type = "button" class="button primary" onclick = "window.location.href = '#sortcc';">TBA <i class="fas fa-user-astronaut fa-lg"></i>Sory by CC</button>
 					</nav>
 				</div>
 
 				<!-- Main -->
 				<div id="main">
 
-	        <article id = "search">
-						<h4>TBA</h4>
+	        <article id = "sortcc">
+						<?php
+							$sqlcc = "SELECT CharacterName, Type, Combat Class FROM BaseCharacterStats ORDER BY Combat Class";
+							$result = $conn->query($sqlcc);
+							if ($result->num_rows > 0) {
+						  // output data of each row
+						  while($row = $result->fetch_assoc()) {
+						    echo "Name: " . $row["CharacterName"]. " - Type: " . $row["Type"]. " - CC: " . $row["Combat Class"]. "<br>";
+						  }
+							} else {
+							  echo "0 results";
+							}
+						?>
 	        </article>
 				</div>
 
