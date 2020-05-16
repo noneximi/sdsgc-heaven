@@ -19,24 +19,24 @@
 			<div id="wrapper">
 
 				<!-- Header -->
+				<div id = "phpconnect"></div>
 				<div id = "mainheader"></div>
 				<div id="header">
 					<div class="content">
 					 <div class="inner">
-						 <h1>Final Boss Guides</h1>
+						 <h1>SDSGC Database</h1>
 					 </div>
 				 </div>
 
 					<nav>
-						<button type = "button" class="button primary" onclick = "location.href='https://edenofgaming.com/super-boss-king-guide/'">SB King <i class="fas fa-user-astronaut fa-lg"></i> Season 1</button>
-						<button type = "button" class="button primary" onclick = "window.location.href = '#season2';">TBA <i class="fas fa-user-astronaut fa-lg"></i> Season 2</button>
+						<button type = "button" class="button primary" onclick = "window.location.href = '#search';">TBA <i class="fas fa-user-astronaut fa-lg"></i> Season 2</button>
 					</nav>
 				</div>
 
 				<!-- Main -->
 				<div id="main">
 
-	        <article id = "season2">
+	        <article id = "search">
 						<h4>TBA</h4>
 	        </article>
 				</div>
