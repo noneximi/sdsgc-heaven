@@ -69,12 +69,12 @@
 							  die("Connection failed: " . $conn->connect_error);
 							}
 
-							$sql = "SELECT `CharacterName`, `Type`, `Combat Class` FROM aae99dbcx92f7n09.BaseCharacterStats ORDER BY `Combat Class`";
+							$sql = "SELECT `CharacterName`, `Type`, `Combat Class` FROM aae99dbcx92f7n09.BaseCharacterStats ORDER BY `Combat Class` DESC";
 							$result = $conn->query($sql);
 							if ($result->num_rows > 0) {
 						  // output data of each row
 						  while($row = $result->fetch_assoc()) {
-						    echo "Name: " . $row["CharacterName"]. " - Type: " . $row["Type"]. " - CC: " . $row["Combat Class"]. "<br>";
+						    echo . $row["Combat Class"]." ". $row["CharacterName"]. " - Type: " . $row["Type"]. "<br>";
 						  }
 							} else {
 							  echo "0 results";
