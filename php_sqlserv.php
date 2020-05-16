@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<html>
+<body>
 <?php
 $servername = "pqxt96p7ysz6rn1f.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
 $username = "h4h3e3qtsw5tyb6s";
@@ -13,3 +15,5 @@ if (!$conn) {
 }
 echo "Connected successfully";
 ?>
+</body>
+</html>
