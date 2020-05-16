@@ -47,7 +47,7 @@
 				 </div>
 
 					<nav>
-						<button type = "button" class="button primary" onclick = "window.location.href = '#sortcc';">TBA <i class="fas fa-user-astronaut fa-lg"></i>Sory by CC</button>
+						<button type = "button" class="button primary" onclick = "window.location.href = '#sortcc';"><i class="fas fa-clipboard-list fa-lg"></i>Sory by CC</button>
 					</nav>
 				</div>
 
