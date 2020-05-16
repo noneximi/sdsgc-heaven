@@ -69,7 +69,7 @@
 							  die("Connection failed: " . $conn->connect_error);
 							}
 
-							$sql = "SELECT CharacterName, Type, Combat Class FROM aae99dbcx92f7n09.BaseCharacterStats ORDER BY Combat Class";
+							$sql = "SELECT `CharacterName`, `Type`, `Combat Class` FROM aae99dbcx92f7n09.BaseCharacterStats ORDER BY `Combat Class`";
 							$result = $conn->query($sql);
 							if ($result->num_rows > 0) {
 						  // output data of each row
