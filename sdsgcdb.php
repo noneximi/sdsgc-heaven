@@ -74,7 +74,7 @@
 							if ($result->num_rows > 0) {
 						  // output data of each row
 						  while($row = $result->fetch_assoc()) {
-						    echo . $row["Combat Class"]." ". $row["CharacterName"]. " - Type: " . $row["Type"]. "<br>";
+						    echo "". $row["Combat Class"]." ". $row["CharacterName"]. " - Type: " . $row["Type"]. "<br>";
 						  }
 							} else {
 							  echo "0 results";
