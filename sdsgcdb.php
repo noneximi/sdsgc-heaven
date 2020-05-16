@@ -25,6 +25,7 @@
 					<div class="content">
 					 <div class="inner">
 						 <h1>SDSGC Database</h1>
+						 <?php echo Hello; ?>
 					 </div>
 				 </div>
 
