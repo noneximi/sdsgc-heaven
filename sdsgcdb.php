@@ -72,7 +72,7 @@
 							die("Connection failed: " . $conn->connect_error);
 						}
 
-						$sql = "SELECT `InGloba`, `CharacterName`, `ImageLink`, `Combat Class` FROM aae99dbcx92f7n09.BaseCharacterStats ORDER BY `Combat Class` DESC";
+						$sql = "SELECT `InGlobal`, `CharacterName`, `ImageLink`, `Combat Class` FROM aae99dbcx92f7n09.BaseCharacterStats ORDER BY `Combat Class` DESC";
 						$result = $conn->query($sql);
 						$fontawesome = '<i class="far fa-check-square"></i>';
 						if ($result->num_rows > 0) {
