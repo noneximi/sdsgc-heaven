@@ -809,6 +809,8 @@ input, select, textarea {
 		}
 		.tabled {
 			display: table;
+			border-collapse: collapse;
+    	border-style: hidden;
 		}
 		.tabled dl {
 			display: table-row;
@@ -817,13 +819,10 @@ input, select, textarea {
 			display: table-cell;
 			padding: .5em;
 			border: thick double white;
-			border-top-style: hidden;
-    	border-left-style: hidden;
 		}
 		@media screen and (max-width: 480px) {
 			.tabled dt, .tabled dd{
 		    display: block;
-		    text-align: center;
 		    width:100%;
 		    padding: .5em;
 		    border: thick double white;
