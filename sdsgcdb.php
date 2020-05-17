@@ -83,12 +83,12 @@
 						$result = $conn->query($sql);
 
 						if ($result->num_rows > 0) {
-							echo '<div id="header" class="content"><div class="table-wrapper"><table><tr><td>Image</td><td>Combat Class</td><td>Character</td><td>PVP Rating</td><td>Farming Rating</td><td>Passive Rating</td><td>In Global</td></tr>';
+							echo '<div class="dbTable"><div id="header" class="content"><div class="table-wrapper"><table><tr><td>Image</td><td>Combat Class</td><td>Character</td><td>PVP Rating</td><td>Farming Rating</td><td>Passive Rating</td><td>In Global</td></tr>';
 							// output data of each row
 							while($row = $result->fetch_assoc()) {
 							echo '<tr><td><span class="image"><img src="' .  $row["ImageLink"] . '" alt="" /></span></td><td>' . $row["Combat Class"] . '</td><td>'. $row["CharacterName"]. '</td><td>' . $row["PVP"]. '</td><td>' . $row["Farming"]. '</td><td>' . $row["Passive"]. '</td><td>' . $row["InGlobal"] . '</td></tr>';
 							}
-							echo '</table></div></div>';
+							echo '</table></div></div></div>';
 						} else {
 							echo "0 results";
 						}
