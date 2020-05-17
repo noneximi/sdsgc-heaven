@@ -7,7 +7,7 @@
 $(function (){
   $("#mainheader").load("https://noneximi.github.io/sdsgc-heaven/mainheader.html");
 });
-function divDisplay(a, b, c, d, e, f, g, h) {
+function divDisplay(a, b, c, d, e, f, g, h, i, j, k, l) {
   var aa = document.getElementById(a);
   var bb = document.getElementById(b);
   var cc = document.getElementById(c);
@@ -16,6 +16,10 @@ function divDisplay(a, b, c, d, e, f, g, h) {
   var ff = document.getElementById(f);
   var gg = document.getElementById(g);
   var hh = document.getElementById(h);
+  var hh = document.getElementById(i);
+  var hh = document.getElementById(j);
+  var hh = document.getElementById(k);
+  var hh = document.getElementById(l);
   bb.style.display = "none";
   cc.style.display = "none";
   dd.style.display = "none";
@@ -23,6 +27,10 @@ function divDisplay(a, b, c, d, e, f, g, h) {
   ff.style.display = "none";
   gg.style.display = "none";
   hh.style.display = "none";
+  ii.style.display = "none";
+  jj.style.display = "none";
+  kk.style.display = "none";
+  ll.style.display = "none";
   aa.style.display = "block";
 }
 
