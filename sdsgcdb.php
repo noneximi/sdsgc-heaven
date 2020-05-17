@@ -83,12 +83,12 @@
 						$result = $conn->query($sql);
 
 						if ($result->num_rows > 0) {
-							echo '<div id="header" class="content"><div class="table-wrapper"><table><tr><th>Image</th><th>Combat Class</th><th>Character</th><th>PVP Rating</th><th>Farming Rating</th><th>Passive Rating</th><th>In Global</th></tr>';
+							echo '<div id="header" class="content"><section class="tabled"><dl><dt>Image</dt><dt>Combat Class</dt><dt>Character</dt><dt>PVP Rating</dt><dt>Farming Rating</dt><dt>Passive Rating</dt><dt>In Global</dt></dl>';
 							// output data of each row
 							while($row = $result->fetch_assoc()) {
-							echo '<tr><td><span class="image"><img src="' .  $row["ImageLink"] . '" alt="" /></span></td><td>' . $row["Combat Class"] . '</td><td>'. $row["CharacterName"]. '</td><td>' . $row["PVP"]. '</td><td>' . $row["Farming"]. '</td><td>' . $row["Passive"]. '</td><td>' . $row["InGlobal"] . '</td></tr>';
+							echo '<dl><dd><span class="image"><img src="' .  $row["ImageLink"] . '" alt="" /></span></dd><dd>' . $row["Combat Class"] . '</dd><dd>'. $row["CharacterName"]. '</dd><dd>' . $row["PVP"]. '</dd><dd>' . $row["Farming"]. '</dd><dd>' . $row["Passive"]. '</dd><dd>' . $row["InGlobal"] . '</dd></dl>';
 							}
-							echo '</table></div></div>';
+							echo '</section></div>';
 						} else {
 							echo "0 results";
 						}
