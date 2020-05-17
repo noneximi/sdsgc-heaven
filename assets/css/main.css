@@ -813,7 +813,7 @@ input, select, textarea {
 		.tabled dl {
 			display: table-row;
 		}
-		.tabled dt, tabled dd {
+		.tabled dt, .tabled dd {
 			display: table-cell;
 		}
 		/*@media screen and (max-width: 480px) {
