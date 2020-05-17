@@ -807,32 +807,6 @@ input, select, textarea {
 		dl dd {
 			margin-left: 2rem;
 		}
-		.tabled {
-			display: table;
-			border-collapse: collapse;
-    	border-style: hidden;
-		}
-		.tabled dl {
-			display: table-row;
-			border-left-style: hidden;
-			border-right-style: hidden;
-		}
-		.tabled dt, .tabled dd {
-			display: table-cell;
-			padding: .5em;
-			border: thin solid white;
-		}
-		@media screen and (max-width: 480px) {
-			.tabled dt, .tabled dd{
-		    display: inline;
-		    width:100%;
-		    padding: .5em;
-		    border: thick double white;
-		    border-top-style: hidden;
-		    border-right-style: hidden;
-		    border-left-style: hidden;
-			}
-		}
 
 
 /* Actions */
