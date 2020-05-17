@@ -75,10 +75,12 @@
 						$sql = "SELECT `CharacterName`, `ImageLink`, `Combat Class` FROM aae99dbcx92f7n09.BaseCharacterStats ORDER BY `Combat Class` DESC";
 						$result = $conn->query($sql);
 						if ($result->num_rows > 0) {
-						// output data of each row
-						while($row = $result->fetch_assoc()) {
-							echo '<table><tr><td>CC: ' . $row["Combat Class"] . '</td><td><img src="' .  $row["ImageLink"] . '" alt="" /></td><td>'. $row["CharacterName"]. '</tr></table>';
-						}
+							echo '<table>';
+							// output data of each row
+							while($row = $result->fetch_assoc()) {
+							echo '<tr><td>CC: ' . $row["Combat Class"] . '</td><td><img src="' .  $row["ImageLink"] . '" alt="" /></td><td>'. $row["CharacterName"]. '</tr>';
+							}
+							echo '</table>';
 						} else {
 							echo "0 results";
 						}
