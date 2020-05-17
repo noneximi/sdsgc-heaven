@@ -74,11 +74,12 @@
 
 						$sql = "SELECT `CharacterName`, `ImageLink`, `Combat Class` FROM aae99dbcx92f7n09.BaseCharacterStats ORDER BY `Combat Class` DESC";
 						$result = $conn->query($sql);
+						$fontawesome = "<i class="far fa-check-square"></i>";
 						if ($result->num_rows > 0) {
 							echo '<table><tr><th></th><th>Combat Class</th><th>Character</th><th>In Global</th></tr>';
 							// output data of each row
 							while($row = $result->fetch_assoc()) {
-							echo '<tr><td><img src="' .  $row["ImageLink"] . '" alt="" /></td><td>CC: ' . $row["Combat Class"] . '</td><td>'. $row["CharacterName"]. '</tr>';
+							echo '<tr><td><img src="' .  $row["ImageLink"] . '" alt="" /></td><td>CC: ' . $row["Combat Class"] . '</td><td>'. $row["CharacterName"]. '</td><td>' . $fontawesome . '</td></tr>';
 							}
 							echo '</table>';
 						} else {
