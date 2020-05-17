@@ -34,28 +34,27 @@
 					</article>
 				</div>
 
+				<div id = "phpconnect">
+					<?php
+					$servername = "pqxt96p7ysz6rn1f.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
+					$username = "h4h3e3qtsw5tyb6s";
+					$password = "kwrzwwxn23vj4trr";
+					$dbname = "sdsgc-heaven-db";
+
+					// Create connection
+					$conn = new mysqli($servername, $username, $password);
+
+					// Check connection
+					if ($conn->connect_error) {
+						die("Connection failed: " . $conn->connect_error);
+					}
+					echo "Connected to $dbname successfully (pls ignore this mssg)";
+					$conn->close();
+					?>
+				</div>
 				<!-- Header -->
 				<div id = "mainheader"></div>
 				<div id="header">
-
-					<div id = "phpconnect">
-						<?php
-						$servername = "pqxt96p7ysz6rn1f.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
-						$username = "h4h3e3qtsw5tyb6s";
-						$password = "kwrzwwxn23vj4trr";
-						$dbname = "sdsgc-heaven-db";
-
-						// Create connection
-						$conn = new mysqli($servername, $username, $password);
-
-						// Check connection
-						if ($conn->connect_error) {
-							die("Connection failed: " . $conn->connect_error);
-						}
-						echo "Connected to $dbname successfully (pls ignore this mssg)";
-						$conn->close();
-						?>
-					</div>
 
 					<div class="content">
 					 <div class="inner">
