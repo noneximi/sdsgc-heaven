@@ -14,7 +14,7 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
 		<style>
-		#sortccdiv {
+		#sortccdiv, #sortattkdiv, #sortdefdiv, #sorthpdiv, #sortpvpdiv, #sortfarmdiv, #sortpassdiv {
 			display: none;
 		}
 		</style>
@@ -47,13 +47,19 @@
 				<div id="header">
 					<div class="content">
 					 <div class="inner">
-						 <h1>SDSGC Database</h1>
-						 <?php echo Hello; ?>
+						 <h1>SDSGC Heaven Database</h1>
+						 <h4>Sort All SDSGC Characters' Base Stats</h4>
 					 </div>
 				 </div>
 
 					<nav>
-						<button type = "button" class="button primary" onclick = "ccSortFunction()"><i class="fas fa-clipboard-list fa-lg"></i>Sory by CC</button>
+						<button type = "button" class="button" onclick = "divDisplay('sortccdiv','sortattkdiv','sortdefdiv','sorthpdiv','sortpvpdiv','sortfarmdiv','sortpassdiv')"><i class="fas fa-clipboard-list fa-lg"></i>By CC</button>
+						<button type = "button" class="button" onclick = "divDisplay('sortattkdiv','sortccdiv','sortdefdiv','sorthpdiv','sortpvpdiv','sortfarmdiv','sortpassdiv')"><i class="fas fa-clipboard-list fa-lg"></i>By Attack</button>
+						<button type = "button" class="button" onclick = "divDisplay('sortdefdiv','sortccdiv','sortattkdiv','sorthpdiv','sortpvpdiv','sortfarmdiv','sortpassdiv')"><i class="fas fa-clipboard-list fa-lg"></i>By Defense</button>
+						<button type = "button" class="button" onclick = "divDisplay('sorthpdiv','sortccdiv','sortattkdiv','sortdefdiv','sortpvpdiv','sortfarmdiv','sortpassdiv')"><i class="fas fa-clipboard-list fa-lg"></i>By HP</button>
+						<button type = "button" class="button" onclick = "divDisplay('sortpvpdiv','sortccdiv','sortattkdiv','sortdefdiv','sorthpdiv','sortfarmdiv','sortpassdiv')"><i class="fas fa-clipboard-list fa-lg"></i>By PVP Rating</button>
+						<button type = "button" class="button" onclick = "divDisplay('sortfarmdiv','sortccdiv','sortattkdiv','sortdefdiv','sorthpdiv','sortpvpdiv','sortpassdiv')"><i class="fas fa-clipboard-list fa-lg"></i>By Farming Rating</button>
+						<button type = "button" class="button" onclick = "divDisplay('sortpassdiv','sortccdiv','sortattkdiv','sortdefdiv','sorthpdiv','sortpvpdiv','sortfarmdiv')"><i class="fas fa-clipboard-list fa-lg"></i>By Passive Rating</button>
 					</nav>
 				</div>
 				<br>
@@ -74,12 +80,198 @@
 
 						$sql = "SELECT `InGlobal`, `CharacterName`, `ImageLink`, `Combat Class` FROM aae99dbcx92f7n09.BaseCharacterStats ORDER BY `Combat Class` DESC";
 						$result = $conn->query($sql);
-						$fontawesome = '<i class="far fa-check-square"></i>';
+
 						if ($result->num_rows > 0) {
 							echo '<table><tr><th></th><th>Combat Class</th><th>Character</th><th>In Global</th></tr>';
 							// output data of each row
 							while($row = $result->fetch_assoc()) {
 							echo '<tr><td><img src="' .  $row["ImageLink"] . '" alt="" /></td><td>CC: ' . $row["Combat Class"] . '</td><td>'. $row["CharacterName"]. '</td><td>' . $row["InGlobal"] . '</td></tr>';
+							}
+							echo '</table>';
+						} else {
+							echo "0 results";
+						}
+						$conn->close();
+					?>
+				</div>
+				<div id = "sortattkdiv">
+					<?php
+						$servername = "pqxt96p7ysz6rn1f.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
+						$username = "h4h3e3qtsw5tyb6s";
+						$password = "kwrzwwxn23vj4trr";
+						$dbname = "sdsgc-heaven-db";
+
+						// Create connection
+						$conn = new mysqli($servername, $username, $password);
+
+						// Check connection
+						if ($conn->connect_error) {
+							die("Connection failed: " . $conn->connect_error);
+						}
+
+						$sql = "SELECT `InGlobal`, `CharacterName`, `ImageLink`, `Attack` FROM aae99dbcx92f7n09.BaseCharacterStats ORDER BY `Attack` DESC";
+						$result = $conn->query($sql);
+
+						if ($result->num_rows > 0) {
+							echo '<table><tr><th></th><th>Attack</th><th>Character</th><th>In Global</th></tr>';
+							// output data of each row
+							while($row = $result->fetch_assoc()) {
+							echo '<tr><td><img src="' .  $row["ImageLink"] . '" alt="" /></td><td>CC: ' . $row["Attack"] . '</td><td>'. $row["CharacterName"]. '</td><td>' . $row["InGlobal"] . '</td></tr>';
+							}
+							echo '</table>';
+						} else {
+							echo "0 results";
+						}
+						$conn->close();
+					?>
+				</div>
+				<div id = "sortdefdiv">
+					<?php
+						$servername = "pqxt96p7ysz6rn1f.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
+						$username = "h4h3e3qtsw5tyb6s";
+						$password = "kwrzwwxn23vj4trr";
+						$dbname = "sdsgc-heaven-db";
+
+						// Create connection
+						$conn = new mysqli($servername, $username, $password);
+
+						// Check connection
+						if ($conn->connect_error) {
+							die("Connection failed: " . $conn->connect_error);
+						}
+
+						$sql = "SELECT `InGlobal`, `CharacterName`, `ImageLink`, `Defense` FROM aae99dbcx92f7n09.BaseCharacterStats ORDER BY `Defense` DESC";
+						$result = $conn->query($sql);
+
+						if ($result->num_rows > 0) {
+							echo '<table><tr><th></th><th>Defense</th><th>Character</th><th>In Global</th></tr>';
+							// output data of each row
+							while($row = $result->fetch_assoc()) {
+							echo '<tr><td><img src="' .  $row["ImageLink"] . '" alt="" /></td><td>CC: ' . $row["Defense"] . '</td><td>'. $row["CharacterName"]. '</td><td>' . $row["InGlobal"] . '</td></tr>';
+							}
+							echo '</table>';
+						} else {
+							echo "0 results";
+						}
+						$conn->close();
+					?>
+				</div>
+				<div id = "sorthpdiv">
+					<?php
+						$servername = "pqxt96p7ysz6rn1f.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
+						$username = "h4h3e3qtsw5tyb6s";
+						$password = "kwrzwwxn23vj4trr";
+						$dbname = "sdsgc-heaven-db";
+
+						// Create connection
+						$conn = new mysqli($servername, $username, $password);
+
+						// Check connection
+						if ($conn->connect_error) {
+							die("Connection failed: " . $conn->connect_error);
+						}
+
+						$sql = "SELECT `InGlobal`, `CharacterName`, `ImageLink`, `Health` FROM aae99dbcx92f7n09.BaseCharacterStats ORDER BY `Health` DESC";
+						$result = $conn->query($sql);
+
+						if ($result->num_rows > 0) {
+							echo '<table><tr><th></th><th>Health</th><th>Character</th><th>In Global</th></tr>';
+							// output data of each row
+							while($row = $result->fetch_assoc()) {
+							echo '<tr><td><img src="' .  $row["ImageLink"] . '" alt="" /></td><td>CC: ' . $row["Health"] . '</td><td>'. $row["CharacterName"]. '</td><td>' . $row["InGlobal"] . '</td></tr>';
+							}
+							echo '</table>';
+						} else {
+							echo "0 results";
+						}
+						$conn->close();
+					?>
+				</div>
+				<div id = "sortpvpdiv">
+					<?php
+						$servername = "pqxt96p7ysz6rn1f.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
+						$username = "h4h3e3qtsw5tyb6s";
+						$password = "kwrzwwxn23vj4trr";
+						$dbname = "sdsgc-heaven-db";
+
+						// Create connection
+						$conn = new mysqli($servername, $username, $password);
+
+						// Check connection
+						if ($conn->connect_error) {
+							die("Connection failed: " . $conn->connect_error);
+						}
+
+						$sql = "SELECT `InGlobal`, `CharacterName`, `ImageLink`, `PVP`, `PVPNum` FROM aae99dbcx92f7n09.BaseCharacterStats ORDER BY `PVPNum` DESC";
+						$result = $conn->query($sql);
+
+						if ($result->num_rows > 0) {
+							echo '<table><tr><th></th><th>PVP Rating</th><th>Character</th><th>In Global</th></tr>';
+							// output data of each row
+							while($row = $result->fetch_assoc()) {
+							echo '<tr><td><img src="' .  $row["ImageLink"] . '" alt="" /></td><td>CC: ' . $row["PVP"] . '</td><td>'. $row["CharacterName"]. '</td><td>' . $row["InGlobal"] . '</td></tr>';
+							}
+							echo '</table>';
+						} else {
+							echo "0 results";
+						}
+						$conn->close();
+					?>
+				</div>
+				<div id = "sortfarmdiv">
+					<?php
+						$servername = "pqxt96p7ysz6rn1f.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
+						$username = "h4h3e3qtsw5tyb6s";
+						$password = "kwrzwwxn23vj4trr";
+						$dbname = "sdsgc-heaven-db";
+
+						// Create connection
+						$conn = new mysqli($servername, $username, $password);
+
+						// Check connection
+						if ($conn->connect_error) {
+							die("Connection failed: " . $conn->connect_error);
+						}
+
+						$sql = "SELECT `InGlobal`, `CharacterName`, `ImageLink`, `Farming`, `FarmingNum` FROM aae99dbcx92f7n09.BaseCharacterStats ORDER BY `FarmingNum` DESC";
+						$result = $conn->query($sql);
+
+						if ($result->num_rows > 0) {
+							echo '<table><tr><th></th><th>Farming Rating</th><th>Character</th><th>In Global</th></tr>';
+							// output data of each row
+							while($row = $result->fetch_assoc()) {
+							echo '<tr><td><img src="' .  $row["ImageLink"] . '" alt="" /></td><td>CC: ' . $row["Farming"] . '</td><td>'. $row["CharacterName"]. '</td><td>' . $row["InGlobal"] . '</td></tr>';
+							}
+							echo '</table>';
+						} else {
+							echo "0 results";
+						}
+						$conn->close();
+					?>
+				</div>
+				<div id = "sortpassdiv">
+					<?php
+						$servername = "pqxt96p7ysz6rn1f.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
+						$username = "h4h3e3qtsw5tyb6s";
+						$password = "kwrzwwxn23vj4trr";
+						$dbname = "sdsgc-heaven-db";
+
+						// Create connection
+						$conn = new mysqli($servername, $username, $password);
+
+						// Check connection
+						if ($conn->connect_error) {
+							die("Connection failed: " . $conn->connect_error);
+						}
+
+						$sql = "SELECT `InGlobal`, `CharacterName`, `ImageLink`, `Passive`, `PassiveNum` FROM aae99dbcx92f7n09.BaseCharacterStats ORDER BY `PassiveNum` DESC";
+						$result = $conn->query($sql);
+
+						if ($result->num_rows > 0) {
+							echo '<table><tr><th></th><th>Passive Rating</th><th>Character</th><th>In Global</th></tr>';
+							// output data of each row
+							while($row = $result->fetch_assoc()) {
+							echo '<tr><td><img src="' .  $row["ImageLink"] . '" alt="" /></td><td>CC: ' . $row["Passive"] . '</td><td>'. $row["CharacterName"]. '</td><td>' . $row["InGlobal"] . '</td></tr>';
 							}
 							echo '</table>';
 						} else {
