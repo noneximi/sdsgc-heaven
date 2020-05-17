@@ -79,7 +79,7 @@
 							die("Connection failed: " . $conn->connect_error);
 						}
 
-						$sql = "SELECT `InGlobal`, `CharacterName`, `ImageLink`, `Combat Class`, `PVP`, `Farming`, `Passive` FROM aae99dbcx92f7n09.BaseCharacterStats ORDER BY `CharacterName` DESC";
+						$sql = "SELECT `InGlobal`, `CharacterName`, `ImageLink`, `Combat Class`, `PVP`, `Farming`, `Passive` FROM aae99dbcx92f7n09.BaseCharacterStats ORDER BY `CharacterName` ASC";
 						$result = $conn->query($sql);
 
 						if ($result->num_rows > 0) {
