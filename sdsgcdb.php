@@ -83,7 +83,7 @@
 						$result = $conn->query($sql);
 
 						if ($result->num_rows > 0) {
-							echo '<table class="table-wrapper"><tr><th></th><th>Combat Class</th><th>Character</th><th>PVP Rating</th><th>Farming Rating</th><th>Passive Rating</th><th>In Global</th></tr>';
+							echo '<table class="table-wrapper"><tr><th>Image</th><th>Combat Class</th><th>Character</th><th>PVP Rating</th><th>Farming Rating</th><th>Passive Rating</th><th>In Global</th></tr>';
 							// output data of each row
 							while($row = $result->fetch_assoc()) {
 							echo '<tr><td><span class="image"><img src="' .  $row["ImageLink"] . '" alt="" /></span></td><td>' . $row["Combat Class"] . '</td><td>'. $row["CharacterName"]. '</td><td>' . $row["PVP"]. '</td><td>' . $row["Farming"]. '</td><td>' . $row["Passive"]. '</td><td>' . $row["InGlobal"] . '</td></tr>';
@@ -119,7 +119,7 @@
 							echo '<table><tr><th></th><th>Combat Class</th><th>Character</th><th>In Global</th></tr>';
 							// output data of each row
 							while($row = $result->fetch_assoc()) {
-							echo '<tr><td><img src="' .  $row["ImageLink"] . '" alt="" /></td><td>' . $row["Combat Class"] . '</td><td>'. $row["CharacterName"]. '</td><td>' . $row["InGlobal"] . '</td></tr>';
+							echo '<tr><td><span class="image"><img src="' .  $row["ImageLink"] . '" alt="" /></span></td><td>' . $row["Combat Class"] . '</td><td>'. $row["CharacterName"]. '</td><td>' . $row["InGlobal"] . '</td></tr>';
 							}
 							echo '</table>';
 						} else {
@@ -151,7 +151,7 @@
 							echo '<table><tr><th></th><th>Attack</th><th>Character</th><th>In Global</th></tr>';
 							// output data of each row
 							while($row = $result->fetch_assoc()) {
-							echo '<tr><td><img src="' .  $row["ImageLink"] . '" alt="" /></td><td>' . $row["Attack"] . '</td><td>'. $row["CharacterName"]. '</td><td>' . $row["InGlobal"] . '</td></tr>';
+							echo '<tr><td><span class="image"><img src="' .  $row["ImageLink"] . '" alt="" /></span></td><td>' . $row["Attack"] . '</td><td>'. $row["CharacterName"]. '</td><td>' . $row["InGlobal"] . '</td></tr>';
 							}
 							echo '</table>';
 						} else {
@@ -183,7 +183,7 @@
 							echo '<table><tr><th></th><th>Defense</th><th>Character</th><th>In Global</th></tr>';
 							// output data of each row
 							while($row = $result->fetch_assoc()) {
-							echo '<tr><td><img src="' .  $row["ImageLink"] . '" alt="" /></td><td>' . $row["Defense"] . '</td><td>'. $row["CharacterName"]. '</td><td>' . $row["InGlobal"] . '</td></tr>';
+							echo '<tr><td><span class="image"><img src="' .  $row["ImageLink"] . '" alt="" /></span></td><td>' . $row["Defense"] . '</td><td>'. $row["CharacterName"]. '</td><td>' . $row["InGlobal"] . '</td></tr>';
 							}
 							echo '</table>';
 						} else {
@@ -215,7 +215,7 @@
 							echo '<table><tr><th></th><th>Health</th><th>Character</th><th>In Global</th></tr>';
 							// output data of each row
 							while($row = $result->fetch_assoc()) {
-							echo '<tr><td><img src="' .  $row["ImageLink"] . '" alt="" /></td><td>' . $row["Health"] . '</td><td>'. $row["CharacterName"]. '</td><td>' . $row["InGlobal"] . '</td></tr>';
+							echo '<tr><td><span class="image"><img src="' .  $row["ImageLink"] . '" alt="" /></span></td><td>' . $row["Health"] . '</td><td>'. $row["CharacterName"]. '</td><td>' . $row["InGlobal"] . '</td></tr>';
 							}
 							echo '</table>';
 						} else {
@@ -247,7 +247,7 @@
 							echo '<table><tr><th></th><th>PVP Rating</th><th>Character</th><th>In Global</th></tr>';
 							// output data of each row
 							while($row = $result->fetch_assoc()) {
-							echo '<tr><td><img src="' .  $row["ImageLink"] . '" alt="" /></td><td>' . $row["PVP"] . '</td><td>'. $row["CharacterName"]. '</td><td>' . $row["InGlobal"] . '</td></tr>';
+							echo '<tr><td><span class="image"><img src="' .  $row["ImageLink"] . '" alt="" /></span></td><td>' . $row["PVP"] . '</td><td>'. $row["CharacterName"]. '</td><td>' . $row["InGlobal"] . '</td></tr>';
 							}
 							echo '</table>';
 						} else {
@@ -279,7 +279,7 @@
 							echo '<table><tr><th></th><th>Farming Rating</th><th>Character</th><th>In Global</th></tr>';
 							// output data of each row
 							while($row = $result->fetch_assoc()) {
-							echo '<tr><td><img src="' .  $row["ImageLink"] . '" alt="" /></td><td>' . $row["Farming"] . '</td><td>'. $row["CharacterName"]. '</td><td>' . $row["InGlobal"] . '</td></tr>';
+							echo '<tr><td><span class="image"><img src="' .  $row["ImageLink"] . '" alt="" /></span></td><td>' . $row["Farming"] . '</td><td>'. $row["CharacterName"]. '</td><td>' . $row["InGlobal"] . '</td></tr>';
 							}
 							echo '</table>';
 						} else {
@@ -311,7 +311,7 @@
 							echo '<table><tr><th></th><th>Passive Rating</th><th>Character</th><th>In Global</th></tr>';
 							// output data of each row
 							while($row = $result->fetch_assoc()) {
-							echo '<tr><td><img src="' .  $row["ImageLink"] . '" alt="" /></td><td>' . $row["Passive"] . '</td><td>'. $row["CharacterName"]. '</td><td>' . $row["InGlobal"] . '</td></tr>';
+							echo '<tr><td><span class="image"><img src="' .  $row["ImageLink"] . '" alt="" /></span></td><td>' . $row["Passive"] . '</td><td>'. $row["CharacterName"]. '</td><td>' . $row["InGlobal"] . '</td></tr>';
 							}
 							echo '</table>';
 						} else {
