@@ -807,6 +807,19 @@ input, select, textarea {
 		dl dd {
 			margin-left: 2rem;
 		}
+		.tabled {
+			display: table;
+		}
+		.tabled dl {
+			display: table-row;
+		}
+		.tabled dt, tabled dd {
+			display: table-cell;
+		}
+		/*@media screen and (max-width: 480px) {
+
+		}*/
+
 
 /* Actions */
 
