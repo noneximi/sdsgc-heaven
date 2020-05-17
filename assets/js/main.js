@@ -16,10 +16,10 @@ function divDisplay(a, b, c, d, e, f, g, h, i, j, k, l) {
   var ff = document.getElementById(f);
   var gg = document.getElementById(g);
   var hh = document.getElementById(h);
-  var hh = document.getElementById(i);
-  var hh = document.getElementById(j);
-  var hh = document.getElementById(k);
-  var hh = document.getElementById(l);
+  var ii = document.getElementById(i);
+  var jj = document.getElementById(j);
+  var kk = document.getElementById(k);
+  var ll = document.getElementById(l);
   bb.style.display = "none";
   cc.style.display = "none";
   dd.style.display = "none";
