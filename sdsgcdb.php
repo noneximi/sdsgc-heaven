@@ -12,6 +12,12 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="apple-touch-icon" href="https://noneximi.github.io/sdsgc-heaven/apple-touch-icon.png">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<style>
+		#sortccdiv {
+			display: none;
+		}
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -47,41 +53,44 @@
 				 </div>
 
 					<nav>
-						<button type = "button" class="button primary" onclick = "window.location.href = '#sortcc';"><i class="fas fa-clipboard-list fa-lg"></i>Sory by CC</button>
+						<button type = "button" class="button primary" onclick = "ccSortFunction()"><i class="fas fa-clipboard-list fa-lg"></i>Sory by CC</button>
 					</nav>
+				</div>
+				<br>
+				<div id = "sortccdiv">
+					<?php
+						$servername = "pqxt96p7ysz6rn1f.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
+						$username = "h4h3e3qtsw5tyb6s";
+						$password = "kwrzwwxn23vj4trr";
+						$dbname = "sdsgc-heaven-db";
+
+						// Create connection
+						$conn = new mysqli($servername, $username, $password);
+
+						// Check connection
+						if ($conn->connect_error) {
+							die("Connection failed: " . $conn->connect_error);
+						}
+
+						$sql = "SELECT `CharacterName`, `ImageLink`, `Combat Class` FROM aae99dbcx92f7n09.BaseCharacterStats ORDER BY `Combat Class` DESC";
+						$result = $conn->query($sql);
+						if ($result->num_rows > 0) {
+						// output data of each row
+						while($row = $result->fetch_assoc()) {
+							echo '' . $row["Combat Class"] . ' <img src="' .  $row["ImageLink"] . '" alt="" /> '. $row["CharacterName"]. '<br>';
+						}
+						} else {
+							echo "0 results";
+						}
+						$conn->close();
+					?>
 				</div>
 
 				<!-- Main -->
 				<div id="main">
 
-	        <article id = "sortcc">
-						<h2>Base Character Stats</h2>
-						<?php
-							$servername = "pqxt96p7ysz6rn1f.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
-							$username = "h4h3e3qtsw5tyb6s";
-							$password = "kwrzwwxn23vj4trr";
-							$dbname = "sdsgc-heaven-db";
-
-							// Create connection
-							$conn = new mysqli($servername, $username, $password);
-
-							// Check connection
-							if ($conn->connect_error) {
-							  die("Connection failed: " . $conn->connect_error);
-							}
-
-							$sql = "SELECT `CharacterName`, `ImageLink`, `Combat Class` FROM aae99dbcx92f7n09.BaseCharacterStats ORDER BY `Combat Class` DESC";
-							$result = $conn->query($sql);
-							if ($result->num_rows > 0) {
-						  // output data of each row
-						  while($row = $result->fetch_assoc()) {
-						    echo '' . $row["Combat Class"] . ' <img src="' .  $row["ImageLink"] . '" alt="" /> '. $row["CharacterName"]. '<br>';
-						  }
-							} else {
-							  echo "0 results";
-							}
-							$conn->close();
-						?>
+	        <article id = "characterinfo">
+						
 	        </article>
 				</div>
 
