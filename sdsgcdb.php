@@ -63,6 +63,39 @@
 					</nav>
 				</div>
 				<br>
+
+				<div id = "firstdiv">
+					<?php
+						$servername = "pqxt96p7ysz6rn1f.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
+						$username = "h4h3e3qtsw5tyb6s";
+						$password = "kwrzwwxn23vj4trr";
+						$dbname = "sdsgc-heaven-db";
+
+						// Create connection
+						$conn = new mysqli($servername, $username, $password);
+
+						// Check connection
+						if ($conn->connect_error) {
+							die("Connection failed: " . $conn->connect_error);
+						}
+
+						$sql = "SELECT `InGlobal`, `CharacterName`, `ImageLink`, `Combat Class`, `PVP`, `Farming`, `Passive` FROM aae99dbcx92f7n09.BaseCharacterStats ORDER BY `CharacterName` DESC";
+						$result = $conn->query($sql);
+
+						if ($result->num_rows > 0) {
+							echo '<table><tr><th></th><th>Combat Class</th><th>Character</th><th>PVP Rating</th><th>Farming Rating</th><th>Passive Rating</th><th>In Global</th></tr>';
+							// output data of each row
+							while($row = $result->fetch_assoc()) {
+							echo '<tr><td><img src="' .  $row["ImageLink"] . '" alt="" /></td><td>' . $row["Combat Class"] . '</td><td>'. $row["CharacterName"]. '</td><td>' . $row["PVP"]. '</td><td>' . $row["Farming"]. '</td><td>' . $row["Passive"]. '</td><td>' . $row["InGlobal"] . '</td></tr>';
+							}
+							echo '</table>';
+						} else {
+							echo "0 results";
+						}
+						$conn->close();
+					?>
+				</div>
+
 				<div id = "sortccdiv">
 					<?php
 						$servername = "pqxt96p7ysz6rn1f.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
