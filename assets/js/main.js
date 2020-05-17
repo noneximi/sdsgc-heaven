@@ -8,11 +8,9 @@ $(function (){
   $("#mainheader").load("https://noneximi.github.io/sdsgc-heaven/mainheader.html");
 });
 function ccSortFunction() {
-  var x = document.getElementById("myDIV");
+  var x = document.getElementById("sortccdiv");
   if (x.style.display === "none") {
     x.style.display = "block";
-  } else {
-    x.style.display = "none";
   }
 }
 
