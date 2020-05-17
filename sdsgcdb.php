@@ -53,13 +53,13 @@
 				 </div>
 
 					<nav>
-						<button type = "button" class="button" onclick = "divDisplay('sortccdiv','sortattkdiv','sortdefdiv','sorthpdiv','sortpvpdiv','sortfarmdiv','sortpassdiv')"><i class="fas fa-clipboard-list fa-lg"></i> CC</button>
-						<button type = "button" class="button" onclick = "divDisplay('sortattkdiv','sortccdiv','sortdefdiv','sorthpdiv','sortpvpdiv','sortfarmdiv','sortpassdiv')"><i class="fas fa-clipboard-list fa-lg"></i> Attack</button>
-						<button type = "button" class="button" onclick = "divDisplay('sortdefdiv','sortccdiv','sortattkdiv','sorthpdiv','sortpvpdiv','sortfarmdiv','sortpassdiv')"><i class="fas fa-clipboard-list fa-lg"></i> Defense</button>
-						<button type = "button" class="button" onclick = "divDisplay('sorthpdiv','sortccdiv','sortattkdiv','sortdefdiv','sortpvpdiv','sortfarmdiv','sortpassdiv')"><i class="fas fa-clipboard-list fa-lg"></i> HP</button>
-						<button type = "button" class="button" onclick = "divDisplay('sortpvpdiv','sortccdiv','sortattkdiv','sortdefdiv','sorthpdiv','sortfarmdiv','sortpassdiv')"><i class="fas fa-clipboard-list fa-lg"></i> PVP Rating</button>
-						<button type = "button" class="button" onclick = "divDisplay('sortfarmdiv','sortccdiv','sortattkdiv','sortdefdiv','sorthpdiv','sortpvpdiv','sortpassdiv')"><i class="fas fa-clipboard-list fa-lg"></i> Farming Rating</button>
-						<button type = "button" class="button" onclick = "divDisplay('sortpassdiv','sortccdiv','sortattkdiv','sortdefdiv','sorthpdiv','sortpvpdiv','sortfarmdiv')"><i class="fas fa-clipboard-list fa-lg"></i> Passive Rating</button>
+						<button type = "button" class="button" onclick = "divDisplay('sortccdiv','firstdiv','sortattkdiv','sortdefdiv','sorthpdiv','sortpvpdiv','sortfarmdiv','sortpassdiv')"><i class="fas fa-clipboard-list fa-lg"></i> CC</button>
+						<button type = "button" class="button" onclick = "divDisplay('sortattkdiv','firstdiv','sortccdiv','sortdefdiv','sorthpdiv','sortpvpdiv','sortfarmdiv','sortpassdiv')"><i class="fas fa-clipboard-list fa-lg"></i> Attack</button>
+						<button type = "button" class="button" onclick = "divDisplay('sortdefdiv','firstdiv','sortccdiv','sortattkdiv','sorthpdiv','sortpvpdiv','sortfarmdiv','sortpassdiv')"><i class="fas fa-clipboard-list fa-lg"></i> Defense</button>
+						<button type = "button" class="button" onclick = "divDisplay('sorthpdiv','firstdiv','sortccdiv','sortattkdiv','sortdefdiv','sortpvpdiv','sortfarmdiv','sortpassdiv')"><i class="fas fa-clipboard-list fa-lg"></i> HP</button>
+						<button type = "button" class="button" onclick = "divDisplay('sortpvpdiv','firstdiv','sortccdiv','sortattkdiv','sortdefdiv','sorthpdiv','sortfarmdiv','sortpassdiv')"><i class="fas fa-clipboard-list fa-lg"></i> PVP Rating</button>
+						<button type = "button" class="button" onclick = "divDisplay('sortfarmdiv','firstdiv','sortccdiv','sortattkdiv','sortdefdiv','sorthpdiv','sortpvpdiv','sortpassdiv')"><i class="fas fa-clipboard-list fa-lg"></i> Farming Rating</button>
+						<button type = "button" class="button" onclick = "divDisplay('sortpassdiv','firstdiv','sortccdiv','sortattkdiv','sortdefdiv','sorthpdiv','sortpvpdiv','sortfarmdiv')"><i class="fas fa-clipboard-list fa-lg"></i> Passive Rating</button>
 					</nav>
 				</div>
 				<br>
