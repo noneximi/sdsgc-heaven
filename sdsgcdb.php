@@ -48,7 +48,7 @@
 					if ($conn->connect_error) {
 						die("Connection failed: " . $conn->connect_error);
 					}
-					echo "Connected to $dbname successfully (pls ignore this mssg)";
+					echo "Connected to $dbname successfully (pls ignore this mssg)<br>";
 					echo "Page may take a moment to load";
 					$conn->close();
 					?>
