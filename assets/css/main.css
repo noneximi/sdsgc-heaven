@@ -824,7 +824,7 @@ input, select, textarea {
 		}
 		@media screen and (max-width: 480px) {
 			.tabled dt, .tabled dd{
-		    display: block;
+		    display: inline;
 		    width:100%;
 		    padding: .5em;
 		    border: thick double white;
