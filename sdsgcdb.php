@@ -78,7 +78,7 @@
 							echo '<table>';
 							// output data of each row
 							while($row = $result->fetch_assoc()) {
-							echo '<tr><td>CC: ' . $row["Combat Class"] . '</td><td><img src="' .  $row["ImageLink"] . '" alt="" /></td><td>'. $row["CharacterName"]. '</tr>';
+							echo '<tr><td><img src="' .  $row["ImageLink"] . '" alt="" /></td><td>CC: ' . $row["Combat Class"] . '</td><td>'. $row["CharacterName"]. '</tr>';
 							}
 							echo '</table>';
 						} else {
