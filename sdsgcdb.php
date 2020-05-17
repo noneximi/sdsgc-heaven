@@ -24,7 +24,6 @@
 		<!-- Wrapper -->
 			<div id="wrapper">
 
-				<!-- Header -->
 				<div id = "phpconnect">
 					<?php
 					$servername = "pqxt96p7ysz6rn1f.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
@@ -43,6 +42,18 @@
 					$conn->close();
 					?>
 				</div>
+
+				<!-- Main -->
+				<div id="main">
+
+					<article id = "characterinfo">
+						<?php
+						echo "character page WIP";
+						?>
+					</article>
+				</div>
+
+				<!-- Header -->
 				<div id = "mainheader"></div>
 				<div id="header">
 					<div class="content">
@@ -319,16 +330,6 @@
 						}
 						$conn->close();
 					?>
-				</div>
-
-				<!-- Main -->
-				<div id="main">
-
-	        <article id = "characterinfo">
-						<?php
-						echo $row["CharacterName"];
-						?>
-	        </article>
 				</div>
 
 				<!-- Footer -->
