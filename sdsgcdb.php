@@ -48,18 +48,18 @@
 					<div class="content">
 					 <div class="inner">
 						 <h1>SDSGC Heaven Database</h1>
-						 <h4>Sort All SDSGC Characters' Base Stats</h4>
+						 <h4>Sort All SDSGC Characters' Base Stats and Ratings</h4>
 					 </div>
 				 </div>
 
 					<nav>
-						<button type = "button" class="button" onclick = "divDisplay('sortccdiv','sortattkdiv','sortdefdiv','sorthpdiv','sortpvpdiv','sortfarmdiv','sortpassdiv')"><i class="fas fa-clipboard-list fa-lg"></i>By CC</button>
-						<button type = "button" class="button" onclick = "divDisplay('sortattkdiv','sortccdiv','sortdefdiv','sorthpdiv','sortpvpdiv','sortfarmdiv','sortpassdiv')"><i class="fas fa-clipboard-list fa-lg"></i>By Attack</button>
-						<button type = "button" class="button" onclick = "divDisplay('sortdefdiv','sortccdiv','sortattkdiv','sorthpdiv','sortpvpdiv','sortfarmdiv','sortpassdiv')"><i class="fas fa-clipboard-list fa-lg"></i>By Defense</button>
-						<button type = "button" class="button" onclick = "divDisplay('sorthpdiv','sortccdiv','sortattkdiv','sortdefdiv','sortpvpdiv','sortfarmdiv','sortpassdiv')"><i class="fas fa-clipboard-list fa-lg"></i>By HP</button>
-						<button type = "button" class="button" onclick = "divDisplay('sortpvpdiv','sortccdiv','sortattkdiv','sortdefdiv','sorthpdiv','sortfarmdiv','sortpassdiv')"><i class="fas fa-clipboard-list fa-lg"></i>By PVP Rating</button>
-						<button type = "button" class="button" onclick = "divDisplay('sortfarmdiv','sortccdiv','sortattkdiv','sortdefdiv','sorthpdiv','sortpvpdiv','sortpassdiv')"><i class="fas fa-clipboard-list fa-lg"></i>By Farming Rating</button>
-						<button type = "button" class="button" onclick = "divDisplay('sortpassdiv','sortccdiv','sortattkdiv','sortdefdiv','sorthpdiv','sortpvpdiv','sortfarmdiv')"><i class="fas fa-clipboard-list fa-lg"></i>By Passive Rating</button>
+						<button type = "button" class="button" onclick = "divDisplay('sortccdiv','sortattkdiv','sortdefdiv','sorthpdiv','sortpvpdiv','sortfarmdiv','sortpassdiv')"><i class="fas fa-clipboard-list fa-lg"></i> CC</button>
+						<button type = "button" class="button" onclick = "divDisplay('sortattkdiv','sortccdiv','sortdefdiv','sorthpdiv','sortpvpdiv','sortfarmdiv','sortpassdiv')"><i class="fas fa-clipboard-list fa-lg"></i> Attack</button>
+						<button type = "button" class="button" onclick = "divDisplay('sortdefdiv','sortccdiv','sortattkdiv','sorthpdiv','sortpvpdiv','sortfarmdiv','sortpassdiv')"><i class="fas fa-clipboard-list fa-lg"></i> Defense</button>
+						<button type = "button" class="button" onclick = "divDisplay('sorthpdiv','sortccdiv','sortattkdiv','sortdefdiv','sortpvpdiv','sortfarmdiv','sortpassdiv')"><i class="fas fa-clipboard-list fa-lg"></i> HP</button>
+						<button type = "button" class="button" onclick = "divDisplay('sortpvpdiv','sortccdiv','sortattkdiv','sortdefdiv','sorthpdiv','sortfarmdiv','sortpassdiv')"><i class="fas fa-clipboard-list fa-lg"></i> PVP Rating</button>
+						<button type = "button" class="button" onclick = "divDisplay('sortfarmdiv','sortccdiv','sortattkdiv','sortdefdiv','sorthpdiv','sortpvpdiv','sortpassdiv')"><i class="fas fa-clipboard-list fa-lg"></i> Farming Rating</button>
+						<button type = "button" class="button" onclick = "divDisplay('sortpassdiv','sortccdiv','sortattkdiv','sortdefdiv','sorthpdiv','sortpvpdiv','sortfarmdiv')"><i class="fas fa-clipboard-list fa-lg"></i> Passive Rating</button>
 					</nav>
 				</div>
 				<br>
@@ -85,7 +85,7 @@
 							echo '<table><tr><th></th><th>Combat Class</th><th>Character</th><th>In Global</th></tr>';
 							// output data of each row
 							while($row = $result->fetch_assoc()) {
-							echo '<tr><td><img src="' .  $row["ImageLink"] . '" alt="" /></td><td>CC: ' . $row["Combat Class"] . '</td><td>'. $row["CharacterName"]. '</td><td>' . $row["InGlobal"] . '</td></tr>';
+							echo '<tr><td><img src="' .  $row["ImageLink"] . '" alt="" /></td><td>' . $row["Combat Class"] . '</td><td>'. $row["CharacterName"]. '</td><td>' . $row["InGlobal"] . '</td></tr>';
 							}
 							echo '</table>';
 						} else {
@@ -116,7 +116,7 @@
 							echo '<table><tr><th></th><th>Attack</th><th>Character</th><th>In Global</th></tr>';
 							// output data of each row
 							while($row = $result->fetch_assoc()) {
-							echo '<tr><td><img src="' .  $row["ImageLink"] . '" alt="" /></td><td>CC: ' . $row["Attack"] . '</td><td>'. $row["CharacterName"]. '</td><td>' . $row["InGlobal"] . '</td></tr>';
+							echo '<tr><td><img src="' .  $row["ImageLink"] . '" alt="" /></td><td>' . $row["Attack"] . '</td><td>'. $row["CharacterName"]. '</td><td>' . $row["InGlobal"] . '</td></tr>';
 							}
 							echo '</table>';
 						} else {
@@ -147,7 +147,7 @@
 							echo '<table><tr><th></th><th>Defense</th><th>Character</th><th>In Global</th></tr>';
 							// output data of each row
 							while($row = $result->fetch_assoc()) {
-							echo '<tr><td><img src="' .  $row["ImageLink"] . '" alt="" /></td><td>CC: ' . $row["Defense"] . '</td><td>'. $row["CharacterName"]. '</td><td>' . $row["InGlobal"] . '</td></tr>';
+							echo '<tr><td><img src="' .  $row["ImageLink"] . '" alt="" /></td><td>' . $row["Defense"] . '</td><td>'. $row["CharacterName"]. '</td><td>' . $row["InGlobal"] . '</td></tr>';
 							}
 							echo '</table>';
 						} else {
@@ -178,7 +178,7 @@
 							echo '<table><tr><th></th><th>Health</th><th>Character</th><th>In Global</th></tr>';
 							// output data of each row
 							while($row = $result->fetch_assoc()) {
-							echo '<tr><td><img src="' .  $row["ImageLink"] . '" alt="" /></td><td>CC: ' . $row["Health"] . '</td><td>'. $row["CharacterName"]. '</td><td>' . $row["InGlobal"] . '</td></tr>';
+							echo '<tr><td><img src="' .  $row["ImageLink"] . '" alt="" /></td><td>' . $row["Health"] . '</td><td>'. $row["CharacterName"]. '</td><td>' . $row["InGlobal"] . '</td></tr>';
 							}
 							echo '</table>';
 						} else {
@@ -209,7 +209,7 @@
 							echo '<table><tr><th></th><th>PVP Rating</th><th>Character</th><th>In Global</th></tr>';
 							// output data of each row
 							while($row = $result->fetch_assoc()) {
-							echo '<tr><td><img src="' .  $row["ImageLink"] . '" alt="" /></td><td>CC: ' . $row["PVP"] . '</td><td>'. $row["CharacterName"]. '</td><td>' . $row["InGlobal"] . '</td></tr>';
+							echo '<tr><td><img src="' .  $row["ImageLink"] . '" alt="" /></td><td>' . $row["PVP"] . '</td><td>'. $row["CharacterName"]. '</td><td>' . $row["InGlobal"] . '</td></tr>';
 							}
 							echo '</table>';
 						} else {
@@ -240,7 +240,7 @@
 							echo '<table><tr><th></th><th>Farming Rating</th><th>Character</th><th>In Global</th></tr>';
 							// output data of each row
 							while($row = $result->fetch_assoc()) {
-							echo '<tr><td><img src="' .  $row["ImageLink"] . '" alt="" /></td><td>CC: ' . $row["Farming"] . '</td><td>'. $row["CharacterName"]. '</td><td>' . $row["InGlobal"] . '</td></tr>';
+							echo '<tr><td><img src="' .  $row["ImageLink"] . '" alt="" /></td><td>' . $row["Farming"] . '</td><td>'. $row["CharacterName"]. '</td><td>' . $row["InGlobal"] . '</td></tr>';
 							}
 							echo '</table>';
 						} else {
@@ -271,7 +271,7 @@
 							echo '<table><tr><th></th><th>Passive Rating</th><th>Character</th><th>In Global</th></tr>';
 							// output data of each row
 							while($row = $result->fetch_assoc()) {
-							echo '<tr><td><img src="' .  $row["ImageLink"] . '" alt="" /></td><td>CC: ' . $row["Passive"] . '</td><td>'. $row["CharacterName"]. '</td><td>' . $row["InGlobal"] . '</td></tr>';
+							echo '<tr><td><img src="' .  $row["ImageLink"] . '" alt="" /></td><td>' . $row["Passive"] . '</td><td>'. $row["CharacterName"]. '</td><td>' . $row["InGlobal"] . '</td></tr>';
 							}
 							echo '</table>';
 						} else {
