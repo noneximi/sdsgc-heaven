@@ -49,6 +49,7 @@
 						die("Connection failed: " . $conn->connect_error);
 					}
 					echo "Connected to $dbname successfully (pls ignore this mssg)";
+					echo "Page may take a moment to load";
 					$conn->close();
 					?>
 				</div>
@@ -58,7 +59,7 @@
 
 					<div class="content">
 					 <div class="inner">
-						 <h1>SDSGC Heaven Database</h1>
+						 <h1>SDSGC Heaven Database (WIP)</h1>
 						 <h4>Sort All SDSGC Characters' Base Stats and Ratings</h4>
 					 </div>
 				 </div>
