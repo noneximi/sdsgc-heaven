@@ -55,6 +55,7 @@
 				<div id="main">
 
 	        <article id = "sortcc">
+						<h2>Base Character Stats</h2>
 						<?php
 							$servername = "pqxt96p7ysz6rn1f.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
 							$username = "h4h3e3qtsw5tyb6s";
@@ -69,12 +70,12 @@
 							  die("Connection failed: " . $conn->connect_error);
 							}
 
-							$sql = "SELECT `CharacterName`, `Type`, `Combat Class` FROM aae99dbcx92f7n09.BaseCharacterStats ORDER BY `Combat Class` DESC";
+							$sql = "SELECT `CharacterName`, `ImageLink`, `Combat Class` FROM aae99dbcx92f7n09.BaseCharacterStats ORDER BY `Combat Class` DESC";
 							$result = $conn->query($sql);
 							if ($result->num_rows > 0) {
 						  // output data of each row
 						  while($row = $result->fetch_assoc()) {
-						    echo "". $row["Combat Class"]." ". $row["CharacterName"]. " - Type: " . $row["Type"]. "<br>";
+						    echo ''. $row["Combat Class"].' <img src="$row["ImageLink"]" alt="" /> '. $row["CharacterName"]. '<br>';
 						  }
 							} else {
 							  echo "0 results";
