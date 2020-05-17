@@ -312,7 +312,7 @@ input, select, textarea {
 
 	.bookends-dots {
 	  position: relative;
-	  border-bottom: 1px solid hsla(0, 0%, 50%, 0.75);
+	  border-bottom: 1px solid hsla(0, 100%, 100%, 1);
 	  width: 50%;
 	}
 	.bookends-dots:before,
@@ -323,7 +323,7 @@ input, select, textarea {
 	  height: 10px;
 	  display: block;
 	  border-width: 0 1px 1px 0;
-	  border-color: hsla(0, 0%, 50%, 0.75);
+	  border-color: hsla(0, 100%, 100%, 1);
 	  border-style: solid;
 	  box-sizing: border-box;
 	  border-radius: 100%;
