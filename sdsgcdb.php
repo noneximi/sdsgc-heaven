@@ -74,7 +74,7 @@
 
 						$sql = "SELECT `CharacterName`, `ImageLink`, `Combat Class` FROM aae99dbcx92f7n09.BaseCharacterStats ORDER BY `Combat Class` DESC";
 						$result = $conn->query($sql);
-						$fontawesome = "<i class="far fa-check-square"></i>";
+						$fontawesome = '<i class="far fa-check-square"></i>';
 						if ($result->num_rows > 0) {
 							echo '<table><tr><th></th><th>Combat Class</th><th>Character</th><th>In Global</th></tr>';
 							// output data of each row
