@@ -126,7 +126,7 @@
 				</div>
 
 				<div id = "sortccdiv">
-					<button type = "button" class="button" onclick = "divDisplay('firstdiv','sortccdiv','sortattkdiv','sortdefdiv','sorthpdiv','sortpvpdiv','sortfarmdiv','sortpassdiv')"><i class="fas fa-th-list fa-lg"></i> Show All</button>
+					<button type = "button" class="button" onclick = "divDisplay('firstdiv','sortccdiv','sortmaxccdiv','sortattkdiv','sortmaxattkdiv','sortdefdiv','sortmaxdefdiv','sorthpdiv','sortmaxhpdiv','sortpvpdiv','sortfarmdiv','sortpassdiv')"><i class="fas fa-th-list fa-lg"></i> Show All</button>
 					<?php
 						$servername = "pqxt96p7ysz6rn1f.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
 						$username = "h4h3e3qtsw5tyb6s";
@@ -158,7 +158,7 @@
 					?>
 				</div>
 				<div id = "sortmaxccdiv">
-					<button type = "button" class="button" onclick = "divDisplay('firstdiv','sortccdiv','sortattkdiv','sortdefdiv','sorthpdiv','sortpvpdiv','sortfarmdiv','sortpassdiv')"><i class="fas fa-th-list fa-lg"></i> Show All</button>
+					<button type = "button" class="button" onclick = "divDisplay('firstdiv','sortccdiv','sortmaxccdiv','sortattkdiv','sortmaxattkdiv','sortdefdiv','sortmaxdefdiv','sorthpdiv','sortmaxhpdiv','sortpvpdiv','sortfarmdiv','sortpassdiv')"><i class="fas fa-th-list fa-lg"></i> Show All</button>
 					<?php
 						$servername = "pqxt96p7ysz6rn1f.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
 						$username = "h4h3e3qtsw5tyb6s";
@@ -190,7 +190,7 @@
 					?>
 				</div>
 				<div id = "sortattkdiv">
-					<button type = "button" class="button" onclick = "divDisplay('firstdiv','sortccdiv','sortattkdiv','sortdefdiv','sorthpdiv','sortpvpdiv','sortfarmdiv','sortpassdiv')"><i class="fas fa-th-list fa-lg"></i> Show All</button>
+					<button type = "button" class="button" onclick = "divDisplay('firstdiv','sortccdiv','sortmaxccdiv','sortattkdiv','sortmaxattkdiv','sortdefdiv','sortmaxdefdiv','sorthpdiv','sortmaxhpdiv','sortpvpdiv','sortfarmdiv','sortpassdiv')"><i class="fas fa-th-list fa-lg"></i> Show All</button>
 					<?php
 						$servername = "pqxt96p7ysz6rn1f.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
 						$username = "h4h3e3qtsw5tyb6s";
@@ -222,7 +222,7 @@
 					?>
 				</div>
 				<div id = "sortmaxattkdiv">
-					<button type = "button" class="button" onclick = "divDisplay('firstdiv','sortccdiv','sortattkdiv','sortdefdiv','sorthpdiv','sortpvpdiv','sortfarmdiv','sortpassdiv')"><i class="fas fa-th-list fa-lg"></i> Show All</button>
+					<button type = "button" class="button" onclick = "divDisplay('firstdiv','sortccdiv','sortmaxccdiv','sortattkdiv','sortmaxattkdiv','sortdefdiv','sortmaxdefdiv','sorthpdiv','sortmaxhpdiv','sortpvpdiv','sortfarmdiv','sortpassdiv')"><i class="fas fa-th-list fa-lg"></i> Show All</button>
 					<?php
 						$servername = "pqxt96p7ysz6rn1f.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
 						$username = "h4h3e3qtsw5tyb6s";
@@ -254,7 +254,7 @@
 					?>
 				</div>
 				<div id = "sortdefdiv">
-					<button type = "button" class="button" onclick = "divDisplay('firstdiv','sortccdiv','sortattkdiv','sortdefdiv','sorthpdiv','sortpvpdiv','sortfarmdiv','sortpassdiv')"><i class="fas fa-th-list fa-lg"></i> Show All</button>
+					<button type = "button" class="button" onclick = "divDisplay('firstdiv','sortccdiv','sortmaxccdiv','sortattkdiv','sortmaxattkdiv','sortdefdiv','sortmaxdefdiv','sorthpdiv','sortmaxhpdiv','sortpvpdiv','sortfarmdiv','sortpassdiv')"><i class="fas fa-th-list fa-lg"></i> Show All</button>
 					<?php
 						$servername = "pqxt96p7ysz6rn1f.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
 						$username = "h4h3e3qtsw5tyb6s";
@@ -286,7 +286,7 @@
 					?>
 				</div>
 				<div id = "sortmaxdefdiv">
-					<button type = "button" class="button" onclick = "divDisplay('firstdiv','sortccdiv','sortattkdiv','sortdefdiv','sorthpdiv','sortpvpdiv','sortfarmdiv','sortpassdiv')"><i class="fas fa-th-list fa-lg"></i> Show All</button>
+					<button type = "button" class="button" onclick = "divDisplay('firstdiv','sortccdiv','sortmaxccdiv','sortattkdiv','sortmaxattkdiv','sortdefdiv','sortmaxdefdiv','sorthpdiv','sortmaxhpdiv','sortpvpdiv','sortfarmdiv','sortpassdiv')"><i class="fas fa-th-list fa-lg"></i> Show All</button>
 					<?php
 						$servername = "pqxt96p7ysz6rn1f.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
 						$username = "h4h3e3qtsw5tyb6s";
@@ -318,7 +318,7 @@
 					?>
 				</div>
 				<div id = "sorthpdiv">
-					<button type = "button" class="button" onclick = "divDisplay('firstdiv','sortccdiv','sortattkdiv','sortdefdiv','sorthpdiv','sortpvpdiv','sortfarmdiv','sortpassdiv')"><i class="fas fa-th-list fa-lg"></i> Show All</button>
+					<button type = "button" class="button" onclick = "divDisplay('firstdiv','sortccdiv','sortmaxccdiv','sortattkdiv','sortmaxattkdiv','sortdefdiv','sortmaxdefdiv','sorthpdiv','sortmaxhpdiv','sortpvpdiv','sortfarmdiv','sortpassdiv')"><i class="fas fa-th-list fa-lg"></i> Show All</button>
 					<?php
 						$servername = "pqxt96p7ysz6rn1f.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
 						$username = "h4h3e3qtsw5tyb6s";
@@ -350,7 +350,7 @@
 					?>
 				</div>
 				<div id = "sortmaxhpdiv">
-					<button type = "button" class="button" onclick = "divDisplay('firstdiv','sortccdiv','sortattkdiv','sortdefdiv','sorthpdiv','sortpvpdiv','sortfarmdiv','sortpassdiv')"><i class="fas fa-th-list fa-lg"></i> Show All</button>
+					<button type = "button" class="button" onclick = "divDisplay('firstdiv','sortccdiv','sortmaxccdiv','sortattkdiv','sortmaxattkdiv','sortdefdiv','sortmaxdefdiv','sorthpdiv','sortmaxhpdiv','sortpvpdiv','sortfarmdiv','sortpassdiv')"><i class="fas fa-th-list fa-lg"></i> Show All</button>
 					<?php
 						$servername = "pqxt96p7ysz6rn1f.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
 						$username = "h4h3e3qtsw5tyb6s";
@@ -382,7 +382,7 @@
 					?>
 				</div>
 				<div id = "sortpvpdiv">
-					<button type = "button" class="button" onclick = "divDisplay('firstdiv','sortccdiv','sortattkdiv','sortdefdiv','sorthpdiv','sortpvpdiv','sortfarmdiv','sortpassdiv')"><i class="fas fa-th-list fa-lg"></i> Show All</button>
+					<button type = "button" class="button" onclick = "divDisplay('firstdiv','sortccdiv','sortmaxccdiv','sortattkdiv','sortmaxattkdiv','sortdefdiv','sortmaxdefdiv','sorthpdiv','sortmaxhpdiv','sortpvpdiv','sortfarmdiv','sortpassdiv')"><i class="fas fa-th-list fa-lg"></i> Show All</button>
 					<?php
 						$servername = "pqxt96p7ysz6rn1f.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
 						$username = "h4h3e3qtsw5tyb6s";
@@ -414,7 +414,7 @@
 					?>
 				</div>
 				<div id = "sortfarmdiv">
-					<button type = "button" class="button" onclick = "divDisplay('firstdiv','sortccdiv','sortattkdiv','sortdefdiv','sorthpdiv','sortpvpdiv','sortfarmdiv','sortpassdiv')"><i class="fas fa-th-list fa-lg"></i> Show All</button>
+					<button type = "button" class="button" onclick = "divDisplay('firstdiv','sortccdiv','sortmaxccdiv','sortattkdiv','sortmaxattkdiv','sortdefdiv','sortmaxdefdiv','sorthpdiv','sortmaxhpdiv','sortpvpdiv','sortfarmdiv','sortpassdiv')"><i class="fas fa-th-list fa-lg"></i> Show All</button>
 					<?php
 						$servername = "pqxt96p7ysz6rn1f.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
 						$username = "h4h3e3qtsw5tyb6s";
@@ -446,7 +446,7 @@
 					?>
 				</div>
 				<div id = "sortpassdiv">
-					<button type = "button" class="button" onclick = "divDisplay('firstdiv','sortccdiv','sortattkdiv','sortdefdiv','sorthpdiv','sortpvpdiv','sortfarmdiv','sortpassdiv')"><i class="fas fa-th-list fa-lg"></i> Show All</button>
+					<button type = "button" class="button" onclick = "divDisplay('firstdiv','sortccdiv','sortmaxccdiv','sortattkdiv','sortmaxattkdiv','sortdefdiv','sortmaxdefdiv','sorthpdiv','sortmaxhpdiv','sortpvpdiv','sortfarmdiv','sortpassdiv')"><i class="fas fa-th-list fa-lg"></i> Show All</button>
 					<?php
 						$servername = "pqxt96p7ysz6rn1f.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
 						$username = "h4h3e3qtsw5tyb6s";
