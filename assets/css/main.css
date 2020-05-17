@@ -818,12 +818,19 @@ input, select, textarea {
 			padding: .5em;
 			border: thick double white;
 			border-top-style: hidden;
-    	border-bottom-style: hidden;
     	border-left-style: hidden;
 		}
-		/*@media screen and (max-width: 480px) {
-
-		}*/
+		@media screen and (max-width: 480px) {
+			.tabled dt, .tabled dd{
+	    display: block;
+	    text-align: center;
+	    width:100%;
+	    padding: .5em;
+	    border: thick double white;
+	    border-top-style: hidden;
+	    border-right-style: hidden;
+	    border-left-style: hidden;
+		}
 
 
 /* Actions */
