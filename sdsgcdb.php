@@ -77,7 +77,7 @@
 						if ($result->num_rows > 0) {
 						// output data of each row
 						while($row = $result->fetch_assoc()) {
-							echo '' . $row["Combat Class"] . ' <img src="' .  $row["ImageLink"] . '" alt="" /> '. $row["CharacterName"]. '<br>';
+							echo 'CC: ' . $row["Combat Class"] . '  <img src="' .  $row["ImageLink"] . '" alt="" />  '. $row["CharacterName"]. '<br><hr = class="bookends-dots">';
 						}
 						} else {
 							echo "0 results";
@@ -90,7 +90,7 @@
 				<div id="main">
 
 	        <article id = "characterinfo">
-						
+
 	        </article>
 				</div>
 
