@@ -75,8 +75,7 @@
 							if ($result->num_rows > 0) {
 						  // output data of each row
 						  while($row = $result->fetch_assoc()) {
-								$link = $row["ImageLink"]
-						    echo ''. $row["Combat Class"].' <img src="$link" alt="" /> '. $row["CharacterName"]. '<br>';
+						    echo '' . $row["Combat Class"] . ' <img src="' .  $row["ImageLink"] . '" alt="" /> '. $row["CharacterName"]. '<br>';
 						  }
 							} else {
 							  echo "0 results";
