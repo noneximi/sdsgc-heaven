@@ -814,6 +814,8 @@ input, select, textarea {
 		}
 		.tabled dl {
 			display: table-row;
+			border-left-style: hidden;
+			border-right-style: hidden;
 		}
 		.tabled dt, .tabled dd {
 			display: table-cell;
