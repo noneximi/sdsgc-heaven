@@ -815,6 +815,11 @@ input, select, textarea {
 		}
 		.tabled dt, .tabled dd {
 			display: table-cell;
+			padding: .5em;
+			border: thick double white;
+			border-top-style: hidden;
+    	border-bottom-style: hidden;
+    	border-left-style: hidden;
 		}
 		/*@media screen and (max-width: 480px) {
 
