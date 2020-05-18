@@ -37,6 +37,10 @@ function modalFunction(modalName) {
   var modal = document.getElementById(modalName);
   modal.style.display = "block";
 }
+function closeButton(modalName) {
+  var modal = document.getElementById(modalName);
+  modal.style.display = "none";
+}
 
 (function($) {
 
