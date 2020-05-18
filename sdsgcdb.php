@@ -470,7 +470,7 @@
 							// output data of each row
 							while($row = $result->fetch_assoc()) {
 							echo '<tr><td><span class="image"><img src="' .  $row["ImageLink"] . '" alt="" /></span></td><td><button onclick="modalFunction(\'' . $row["CharacterName"] . 'Modal\')">' . $row["Passive"] . '</button></td><td>'. $row["CharacterName"]. '</td><td>' . $row["InGlobal"] . '</td>
-							<div id="' . $row["CharacterName"] . 'Modal" class="modal"><div class="modal-content"><span class="close" onclick="closeButton(\'' . $row["CharacterName"] . 'Modal\')">&times;</span><p>' . $row["PassiveText"] . '</p></div></div></tr>';
+							<div id="' . $row["CharacterName"] . 'Modal" class="modal"><div class="modal-content"><span class="close" onclick="closeButton(\'' . $row["CharacterName"] . 'Modal\')">&times;</span><p><span class="image"><img src="' .  $row["PassImageLink"] . '" alt="" /></span>' . $row["PassiveText"] . '<span class="image"><img src="' .  $row["CommImageLink"] . '" alt="" /></span>' . $row["CommandmentText"] . '</p></div></div></tr>';
 							}
 							echo '</table>';
 						} else {
