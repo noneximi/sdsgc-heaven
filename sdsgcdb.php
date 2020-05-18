@@ -462,7 +462,7 @@
 							die("Connection failed: " . $conn->connect_error);
 						}
 
-						$sql = "SELECT `InGlobal`, `CharacterName`, `ImageLink`, `Passive`, `PassiveNum` FROM aae99dbcx92f7n09.BaseCharacterStats ORDER BY `PassiveNum` DESC";
+						$sql = "SELECT `InGlobal`, `CharacterName`, `ImageLink`, `Passive`, `PassiveNum`, `PassImageLink`, `PassiveText`, `CommImageLink`, `CommandmentText` FROM aae99dbcx92f7n09.BaseCharacterStats ORDER BY `PassiveNum` DESC";
 						$result = $conn->query($sql);
 
 						if ($result->num_rows > 0) {
