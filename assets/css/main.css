@@ -1037,7 +1037,7 @@ input, select, textarea {
 			@media screen and (max-width: 480px) {
 
 				.dbTable {
-					padding-left: 125px;
+					padding-left: 100px;
 				}
 
 			}
