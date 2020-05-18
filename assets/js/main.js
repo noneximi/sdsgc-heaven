@@ -33,6 +33,10 @@ function divDisplay(a, b, c, d, e, f, g, h, i, j, k, l) {
   ll.style.display = "none";
   aa.style.display = "block";
 }
+function modalFunction(modalName) {
+  var modal = document.getElementById(modalName);
+  modal.style.display = "block";
+}
 
 (function($) {
 
