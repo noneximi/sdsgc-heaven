@@ -466,7 +466,7 @@
 						$result = $conn->query($sql);
 
 						if ($result->num_rows > 0) {
-							echo '<table><tr><th></th><th>Passive Rating (Click for Info)</th><th>Character</th><th>In Global</th></tr>';
+							echo '<table><tr><th></th><th>Passive Rating<br>(Click for Info)</th><th>Character</th><th>In Global</th></tr>';
 							// output data of each row
 							while($row = $result->fetch_assoc()) {
 							echo '<tr><td><span class="image"><img src="' .  $row["ImageLink"] . '" alt="" /></span></td><td><button onclick="modalFunction(\'' . $row["CharacterName"] . 'Modal\')">' . $row["Passive"] . '</button></td><td>'. $row["CharacterName"]. '</td><td>' . $row["InGlobal"] . '</td>
