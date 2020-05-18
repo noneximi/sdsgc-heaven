@@ -69,7 +69,7 @@
 
 					<div class="content">
 					 <div class="inner">
-						 <h1>SDSGC Heaven Database (WIP)</h1>
+						 <h1>SDSGC Heaven Codex (WIP) <small>actually just a database</small></h1>
 						 <h4>Sort All SDSGC Characters' Base Stats and Ratings</h4>
 						 <p>Max Stats Data is ungeared (not all character data is available - some new JP releases)</p>
 						 <p>Data sources: <a href="https://docs.google.com/spreadsheets/d/1LPWgA2gJWagYyDwtXKbzQ0G5xuZ0Q4_p2Hvrs01fuM4/" target=_blank>Google Sheets</a>, <a href="https://gcdatabase.com/index.html" target=_blank>GCDatabase</a></p>
