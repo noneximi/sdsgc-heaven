@@ -51,19 +51,6 @@
 					}
 					echo "Connected to $dbname successfully (pls ignore this mssg)<br>";
 					echo "Page may take a moment to load";
-
-					$sql = "SELECT `CharacterName` FROM aae99dbcx92f7n09.BaseCharacterStats ORDER BY `CharacterName` ASC";
-					$result = $conn->query($sql);
-
-					if ($result->num_rows > 0) {
-						// output data of each row
-						while($row = $result->fetch_assoc()) {
-							echo '<html><script>addSearchSugg(' . $row["CharacterName"] . ');</script></html>';
-						}
-						echo '<html><script>deployAutoComp();</script></html>';
-					} else {
-						echo "0 results";
-					}
 					$conn->close();
 					?>
 				</div>
@@ -106,9 +93,8 @@
 						<button type = "button" class="button" onclick = "divDisplay('sortfarmdiv','firstdiv','sortccdiv','sortmaxccdiv','sortattkdiv','sortmaxattkdiv','sortdefdiv','sortmaxdefdiv','sorthpdiv','sortmaxhpdiv','sortpvpdiv','sortpassdiv')"><i class="fas fa-clipboard-list fa-lg"></i> Farming Rating</button>
 						<button type = "button" class="button" onclick = "divDisplay('sortpassdiv','firstdiv','sortccdiv','sortmaxccdiv','sortattkdiv','sortmaxattkdiv','sortdefdiv','sortmaxdefdiv','sorthpdiv','sortmaxhpdiv','sortpvpdiv','sortfarmdiv')"><i class="fas fa-clipboard-list fa-lg"></i> Passive Rating</button>
 					</nav>
-					<br>
 					<!--Search Bar-->
-					<form autocomplete="off" method="post">
+					<form autocomplete="off" action="" method="post">
 					  <div class="autocomplete">
 					    <input id="charSearch" type="text" name="charNameInput" placeholder="Please Select From Dropdown"/>
 					  </div>
