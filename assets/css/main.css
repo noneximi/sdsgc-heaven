@@ -619,7 +619,6 @@ input, select, textarea {
   /*the container must be positioned relative:*/
 	  position: relative;
 	  display: inline-block;
-		width: 100%;
 	}
 	.autocomplete-items {
 	  position: absolute;
