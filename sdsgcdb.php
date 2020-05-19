@@ -96,7 +96,7 @@
 					<!--Search Bar-->
 					<form autocomplete="off" action="" method="post">
 					  <div class="autocomplete">
-					    <input id="charSearch" type="text" name="charNameInput" placeholder="Please Select From Dropdown"/>
+					    <input id="charSearch" type="text" name="charNameInput" placeholder="Select From Dropdown"/>
 					  </div>
 					  <input type="submit" name="SubmitButton"/>
 					</form>
