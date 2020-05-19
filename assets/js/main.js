@@ -11,7 +11,11 @@ $(function (){
 function addSearchSugg(stext) {
   charactersArr.push(stext);
 }
-function autocomplete(inp, charactersArr) {
+function deployAutoComp() {
+  /*initiate the autocomplete function on the "myInput" element, and pass along the character names array as possible autocomplete values:*/
+  autocomplete(document.getElementById("charSearch"), charactersArr);
+}
+function autocomplete(inp, arr) {
   /*the autocomplete function takes two arguments,
   the text field element and an array of possible autocompleted values:*/
   var currentFocus;
