@@ -619,6 +619,7 @@ input, select, textarea {
   /*the container must be positioned relative:*/
 	  position: relative;
 	  display: inline-block;
+		width: 50%;
 	}
 	.autocomplete-items {
 	  position: absolute;
@@ -645,6 +646,15 @@ input, select, textarea {
 	  /*when navigating through the items using the arrow keys:*/
 	  background-color: DodgerBlue !important;
 	  color: #ffffff;
+	}
+	@media screen and (max-width: 480px) {
+
+		.autocomplete {
+			position: relative;
+		  display: inline-block;
+			width: 100%;
+		}
+
 	}
 
 /* Box */
