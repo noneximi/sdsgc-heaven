@@ -3,18 +3,12 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
-var charactersArr = [];
+var charactersArr = ["atest", "ctest", "btest"];
+autocomplete(document.getElementById("charSearch"), charactersArr);
 
 $(function (){
   $("#mainheader").load("https://noneximi.github.io/sdsgc-heaven/mainheader.html");
 });
-function addSearchSugg(stext) {
-  charactersArr.push(stext);
-}
-function deployAutoComp() {
-  /*initiate the autocomplete function on the "myInput" element, and pass along the character names array as possible autocomplete values:*/
-  autocomplete(document.getElementById("charSearch"), charactersArr);
-}
 function autocomplete(inp, arr) {
   /*the autocomplete function takes two arguments,
   the text field element and an array of possible autocompleted values:*/
