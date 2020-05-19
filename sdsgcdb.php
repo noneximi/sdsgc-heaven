@@ -514,6 +514,11 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<!--script for search bar stuff-->
+			<script>
+				var charactersArr = ["atest", "ctest", "btest"];
+				autocomplete(document.getElementById("charSearch"), charactersArr);
+			</script>
 
 	</body>
 </html>
