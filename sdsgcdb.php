@@ -34,16 +34,7 @@
 		<!-- Wrapper -->
 			<div id="wrapper">
 
-				<!-- Main -->
-				<div id="main">
-
-					<article id = "characterinfo">
-						<?php
-						echo "character page WIP";
-						?>
-					</article>
-				</div>
-
+				<!--initialize-->
 				<div id = "phpconnect">
 					<?php
 					$servername = "pqxt96p7ysz6rn1f.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
@@ -60,9 +51,33 @@
 					}
 					echo "Connected to $dbname successfully (pls ignore this mssg)<br>";
 					echo "Page may take a moment to load";
+
+					$sql = "SELECT `CharacterName` FROM aae99dbcx92f7n09.BaseCharacterStats ORDER BY `CharacterName` ASC";
+					$result = $conn->query($sql);
+
+					if ($result->num_rows > 0) {
+						// output data of each row
+						while($row = $result->fetch_assoc()) {
+							echo '<script>addSearchSugg(' . $row["CharacterName"] . ');</script>';
+						}
+						echo '<script>deployAutoComp();</script>';
+					} else {
+						echo "0 results";
+					}
 					$conn->close();
 					?>
 				</div>
+
+				<!-- Main -->
+				<div id="main">
+
+					<article id = "characterinfo">
+						<?php
+						echo "character page WIP";
+						?>
+					</article>
+				</div>
+
 				<!-- Header -->
 				<div id = "mainheader"></div>
 				<div id="header">
@@ -92,6 +107,20 @@
 						<button type = "button" class="button" onclick = "divDisplay('sortpassdiv','firstdiv','sortccdiv','sortmaxccdiv','sortattkdiv','sortmaxattkdiv','sortdefdiv','sortmaxdefdiv','sorthpdiv','sortmaxhpdiv','sortpvpdiv','sortfarmdiv')"><i class="fas fa-clipboard-list fa-lg"></i> Passive Rating</button>
 					</nav>
 				</div>
+				<br>
+				<!--Search Bar-->
+				<form autocomplete="off" method="post">
+				  <div class="autocomplete">
+				    <input id="charSearch" type="text" name="charNameInput" placeholder="Please Select From Dropdown"/>
+				  </div>
+				  <input type="submit" name="SubmitButton"/>
+				</form>
+				<?php
+					if(isset($_POST['SubmitButton'])){ //check if form was submitted
+					  $input = $_POST['inputText']; //get input text
+						echo '<html><script>window.location.href="#characterinfo";</script></html>';
+					}
+				?>
 				<br>
 
 				<div id = "firstdiv">
@@ -470,7 +499,8 @@
 							// output data of each row
 							while($row = $result->fetch_assoc()) {
 							echo '<tr><td><span class="image"><img src="' .  $row["ImageLink"] . '" alt="" /></span></td><td><button onclick="modalFunction(\'' . $row["CharacterName"] . 'Modal\')">' . $row["Passive"] . '</button></td><td>'. $row["CharacterName"]. '</td><td>' . $row["InGlobal"] . '</td>
-							<div id="' . $row["CharacterName"] . 'Modal" class="modal"><div class="modal-content"><span class="close" onclick="closeButton(\'' . $row["CharacterName"] . 'Modal\')">&times;</span><p><span class="image"><img src="' .  $row["PassImageLink"] . '" alt="" /></span><br>' . $row["PassiveText"] . '<br><span class="image"><img src="' .  $row["CommImageLink"] . '" alt="" /></span><br>' . $row["CommandmentText"] . '</p></div></div></tr>';
+							<div id="' . $row["CharacterName"] . 'Modal" class="modal"><div class="modal-content"><span class="close" onclick="closeButton(\'' . $row["CharacterName"] . 'Modal\')">&times;</span><p><span class="image"><img src="' .  $row["PassImageLink"] . '" alt="" /></span>
+							<br>' . $row["PassiveText"] . '<br><span class="image"><img src="' .  $row["CommImageLink"] . '" alt="" /></span><br>' . $row["CommandmentText"] . '</p></div></div></tr>';
 							}
 							echo '</table>';
 						} else {
