@@ -516,7 +516,34 @@
 			<script src="assets/js/main.js"></script>
 			<!--script for search bar stuff-->
 			<script>
-				var charactersArr = ["atest", "ctest", "btest"];
+				var charactersArr = [];
+				<?php
+					$servername = "pqxt96p7ysz6rn1f.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
+					$username = "h4h3e3qtsw5tyb6s";
+					$password = "kwrzwwxn23vj4trr";
+					$dbname = "sdsgc-heaven-db";
+
+					// Create connection
+					$conn = new mysqli($servername, $username, $password);
+
+					// Check connection
+					if ($conn->connect_error) {
+						die("Connection failed: " . $conn->connect_error);
+					}
+
+					$sql = "SELECT `CharacterName` FROM aae99dbcx92f7n09.BaseCharacterStats ORDER BY `CharacterName` ASC";
+					$result = $conn->query($sql);
+
+					if ($result->num_rows > 0) {
+						// data of each row
+						while($row = $result->fetch_assoc()) {
+							echo 'charactersArr.push("' . $row["CharacterName"] . '");';
+						}
+					} else {
+						echo "0 results";
+					}
+					$conn->close();
+				?>
 				autocomplete(document.getElementById("charSearch"), charactersArr);
 			</script>
 
