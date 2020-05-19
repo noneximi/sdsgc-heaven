@@ -8,6 +8,9 @@ var charactersArr;
 $(function (){
   $("#mainheader").load("https://noneximi.github.io/sdsgc-heaven/mainheader.html");
 });
+function addSearchSugg(stext) {
+  charactersArr.push(stext);
+}
 function divDisplay(a, b, c, d, e, f, g, h, i, j, k, l) {
   var aa = document.getElementById(a);
   var bb = document.getElementById(b);
