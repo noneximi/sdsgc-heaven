@@ -60,7 +60,7 @@
 
 					<article id = "characterinfo">
 						<?php
-						echo "character page WIP";
+							echo "character page WIP";
 						?>
 					</article>
 				</div>
@@ -101,14 +101,12 @@
 					  <input type="submit" name="SubmitButton"/>
 					</form>
 				</div>
-
-				<br>
-				<?php
+				<!--/*php
 					if(isset($_POST['SubmitButton'])){ //check if form was submitted
 					  $input = $_POST['inputText']; //get input text
 						echo '<html><script>window.location.href="#characterinfo";</script></html>';
 					}
-				?>
+				-->
 				<br>
 
 				<div id = "firstdiv">
