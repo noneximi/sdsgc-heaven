@@ -58,9 +58,9 @@
 					if ($result->num_rows > 0) {
 						// output data of each row
 						while($row = $result->fetch_assoc()) {
-							echo '<script>addSearchSugg(' . $row["CharacterName"] . ');</script>';
+							echo '<html><script>addSearchSugg(' . $row["CharacterName"] . ');</script></html>';
 						}
-						echo '<script>deployAutoComp();</script>';
+						echo '<html><script>deployAutoComp();</script></html>';
 					} else {
 						echo "0 results";
 					}
@@ -106,15 +106,17 @@
 						<button type = "button" class="button" onclick = "divDisplay('sortfarmdiv','firstdiv','sortccdiv','sortmaxccdiv','sortattkdiv','sortmaxattkdiv','sortdefdiv','sortmaxdefdiv','sorthpdiv','sortmaxhpdiv','sortpvpdiv','sortpassdiv')"><i class="fas fa-clipboard-list fa-lg"></i> Farming Rating</button>
 						<button type = "button" class="button" onclick = "divDisplay('sortpassdiv','firstdiv','sortccdiv','sortmaxccdiv','sortattkdiv','sortmaxattkdiv','sortdefdiv','sortmaxdefdiv','sorthpdiv','sortmaxhpdiv','sortpvpdiv','sortfarmdiv')"><i class="fas fa-clipboard-list fa-lg"></i> Passive Rating</button>
 					</nav>
+					<br>
+					<!--Search Bar-->
+					<form autocomplete="off" method="post">
+					  <div class="autocomplete">
+					    <input id="charSearch" type="text" name="charNameInput" placeholder="Please Select From Dropdown"/>
+					  </div>
+					  <input type="submit" name="SubmitButton"/>
+					</form>
 				</div>
+
 				<br>
-				<!--Search Bar-->
-				<form autocomplete="off" method="post">
-				  <div class="autocomplete">
-				    <input id="charSearch" type="text" name="charNameInput" placeholder="Please Select From Dropdown"/>
-				  </div>
-				  <input type="submit" name="SubmitButton"/>
-				</form>
 				<?php
 					if(isset($_POST['SubmitButton'])){ //check if form was submitted
 					  $input = $_POST['inputText']; //get input text
