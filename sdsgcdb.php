@@ -58,12 +58,12 @@
 					if ($result->num_rows > 0) {
 						// output data of each row
 						while($row = $result->fetch_assoc()) {
-						echo '<div id="' . $row["CharacterName"] . 'Modal" class="modal"><div class="modal-content"><span class="close" onclick="closeButton(\'' . $row["CharacterName"] . 'Modal\')">&times;</span><span class="image"><img src="' .  $row["ImageLink"] . '" alt="" /></span>' . $row["CharacterName"] . '
+						echo '<div id="' . $row["CharacterName"] . 'Modal" class="modal"><div class="modal-content"><span class="close" onclick="closeButton(\'' . $row["CharacterName"] . 'Modal\')">&times;</span><p style="text-align: center;"><span class="image"><img src="' .  $row["ImageLink"] . '" alt="" /></span>' . $row["CharacterName"] . '</p>
 						<p><span class="image"><img src="' .  $row["PassImageLink"] . '" alt="" /></span><br>' . $row["PassiveText"] . '<br><span class="image"><img src="' .  $row["CommImageLink"] . '" alt="" /></span><br>' . $row["CommandmentText"] . '</p>
 						<table> <tr><th>In Global?</th><td>' . $row["InGlobal"] . '</td></tr> <tr><th>Combat Class:</th><td>' . $row["Combat Class"] . '</td></tr> <tr><th>Max Combat Class:</th><td>' . $row["MaxCC"] . '</td></tr> <tr><th>PVP Rating:</th><td>' . $row["PVP"] . '</td></tr> <tr><th>Farming Rating:</th><td>' . $row["Farming"] . '</td></tr> <tr><th>Passive Rating:</th><td>' . $row["Passive"] . '</td></tr>
 						<tr><th>Attack:</th><td>' . $row["Attack"] . '</td></tr> <tr><th>Max Attack:</th><td>' . $row["MaxAttack"] . '</td></tr> <tr><th>Defense:</th><td>' . $row["Defense"] . '</td></tr> <tr><th>Max Defense:</th><td>' . $row["MaxDefense"] . '</td></tr> <tr><th>Health:</th><td>' . $row["Health"] . '</td></tr> <tr><th>Max Health:</th><td>' . $row["MaxHP"] . '</td></tr>
-						<tr><th>Pierce Rate:</th><td>' . $row["Pierce Rate"] . '</td></tr> <tr><th>Critical Chance:</th><td>' . $row["Critical Chance"] . '</td></tr> <tr><th>Critical Damage:</th><td>' . $row["Critical Damage"] . '</td></tr> <tr><th>Resistance:</th><td>' . $row["Resistance"] . '</td></tr> <tr><th>Critical Resistance:</th><td>' . $row["Critical Resistance"] . '</td></tr> <tr><th>Critical Defense:</th><td>' . $row["Critical Defense"] . '</td></tr>
-						<tr><th>Regeneration Rate:</th><td>' . $row["Regeneration Rate"] . '</td></tr> <tr><th>Recovery Rate:</th><td>' . $row["Recovery Rate"] . '</td></tr> <tr><th>Lifesteal:</th><td>' . $row["Lifesteal"] . '</td></tr>
+						<tr><th>Pierce Rate:</th><td>' . $row["Pierce Rate"] . '%</td></tr> <tr><th>Critical Chance:</th><td>' . $row["Critical Chance"] . '%</td></tr> <tr><th>Critical Damage:</th><td>' . $row["Critical Damage"] . '%</td></tr> <tr><th>Resistance:</th><td>' . $row["Resistance"] . '%</td></tr> <tr><th>Critical Resistance:</th><td>' . $row["Critical Resistance"] . '%</td></tr> <tr><th>Critical Defense:</th><td>' . $row["Critical Defense"] . '%</td></tr>
+						<tr><th>Regeneration Rate:</th><td>' . $row["Regeneration Rate"] . '%</td></tr> <tr><th>Recovery Rate:</th><td>' . $row["Recovery Rate"] . '%</td></tr> <tr><th>Lifesteal:</th><td>' . $row["Lifesteal"] . '%</td></tr>
 						</table></div></div>';
 						}
 					} else {
@@ -89,8 +89,7 @@
 
 					<div class="content">
 					 <div class="inner">
-						 <h1>SDSGC Heaven Codex (WIP)</h1>
-						 <small>(actually a database)</small>
+						 <h1>SDSGC Character Stats (WIP)</h1>
 						 <h4>Sort All SDSGC Characters' Base Stats and Ratings</h4>
 						 <p>Max Stats Data is ungeared (not all character data is available - some new JP releases)</p>
 						 <p>Data sources: <a href="https://docs.google.com/spreadsheets/d/1LPWgA2gJWagYyDwtXKbzQ0G5xuZ0Q4_p2Hvrs01fuM4/" target=_blank>Google Sheets</a>, <a href="https://gcdatabase.com/index.html" target=_blank>GCDatabase</a></p>
