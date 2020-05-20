@@ -95,19 +95,13 @@
 						<button type = "button" class="button" onclick = "divDisplayP2('sortpassdiv','firstdiv','sortpvpdiv','sortfarmdiv')"><i class="fas fa-clipboard-list fa-lg"></i> Passive Rating</button>
 					</nav>
 					<!--Search Bar-->
-					<form autocomplete="off" action="" method="post">
-					  <div class="autocomplete">
-					    <input id="charSearch" type="text" name="charNameInput" placeholder="Search (Choose One)"/>
-					  </div>
-					  <input type="submit" name="SubmitButton"/>
-					</form>
+					<nav>
+						<div class="autocomplete">
+					  	<input id="charSearch" type="text" name="charNameInput" placeholder="Search (Choose One)" autocomplete="off"/>
+						</div>
+						<button type = "button" class="button" onclick="searchSub()"><i class="fas fa-search"></i></button>
+					</nav>
 				</div>
-				<!--/*php
-					if(isset($_POST['SubmitButton'])){ //check if form was submitted
-					  $input = $_POST['inputText']; //get input text
-						echo '<html><script>window.location.href="#characterinfo";</script></html>';
-					}
-				-->
 				<br>
 
 				<div id = "firstdiv">

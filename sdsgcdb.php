@@ -102,10 +102,12 @@
 						<button type = "button" class="button" onclick = "divDisplay('sortmaxhpdiv','firstdiv','sortccdiv','sortmaxccdiv','sortattkdiv','sortmaxattkdiv','sortdefdiv','sortmaxdefdiv','sorthpdiv')"><i class="fas fa-clipboard-list fa-lg"></i> Max HP</button>
 					</nav>
 					<!--Search Bar-->
-					<div class="autocomplete">
-					  <input id="charSearch" type="text" name="charNameInput" placeholder="Search (Choose One)" autocomplete="off"/>
-					</div>
-					<button type = "button" class="button" onclick="searchSub()"><i class="fas fa-search"></i></button>
+					<nav>
+						<div class="autocomplete">
+					  	<input id="charSearch" type="text" name="charNameInput" placeholder="Search (Choose One)" autocomplete="off"/>
+						</div>
+						<button type = "button" class="button" onclick="searchSub()"><i class="fas fa-search"></i></button>
+					</nav>
 				</div>
 				<br>
 
