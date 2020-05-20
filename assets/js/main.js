@@ -105,7 +105,7 @@ function autocomplete(inp, arr) {
 }
 /*handle search*/
 function searchSub() {
-  var searchT = document.getElementById('charSearch').value;
+  var searchT = document.getElementById('charSearch').value + "Modal";
   modalFunction(searchT);
 }
 
