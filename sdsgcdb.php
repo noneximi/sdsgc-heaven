@@ -45,12 +45,30 @@
 					// Create connection
 					$conn = new mysqli($servername, $username, $password);
 
-					// Check connection
+					// Check connection and make character modals
 					if ($conn->connect_error) {
 						die("Connection failed: " . $conn->connect_error);
 					}
 					echo "Connected to $dbname successfully (pls ignore this mssg)<br>";
 					echo "Page may take a moment to load";
+
+					$sql = "SELECT * FROM aae99dbcx92f7n09.BaseCharacterStats ORDER BY `CharacterName` DESC";
+					$result = $conn->query($sql);
+
+					if ($result->num_rows > 0) {
+						// output data of each row
+						while($row = $result->fetch_assoc()) {
+						echo '<div id="' . $row["CharacterName"] . 'Modal" class="modal"><div class="modal-content"><span class="close" onclick="closeButton(\'' . $row["CharacterName"] . 'Modal\')">&times;</span><span class="image"><img src="' .  $row["ImageLink"] . '" alt="" /></span>' . $row["CharacterName"] . '
+						<p><span class="image"><img src="' .  $row["PassImageLink"] . '" alt="" /></span><br>' . $row["PassiveText"] . '<br><span class="image"><img src="' .  $row["CommImageLink"] . '" alt="" /></span><br>' . $row["CommandmentText"] . '</p>
+						<table> <tr><th>In Global?</th><td>' . $row["InGlobal"] . '</td></tr> <tr><th>Combat Class:</th><td>' . $row["Combat Class"] . '</td></tr> <tr><th>Max Combat Class:</th><td>' . $row["MaxCC"] . '</td></tr> <tr><th>PVP Rating:</th><td>' . $row["PVP"] . '</td></tr> <tr><th>Farming Rating:</th><td>' . $row["Farming"] . '</td></tr> <tr><th>Passive Rating:</th><td>' . $row["Passive"] . '</td></tr>
+						<tr><th>Attack:</th><td>' . $row["Attack"] . '</td></tr> <tr><th>Max Attack:</th><td>' . $row["MaxAttack"] . '</td></tr> <tr><th>Defense:</th><td>' . $row["Defense"] . '</td></tr> <tr><th>Max Defense:</th><td>' . $row["MaxDefense"] . '</td></tr> <tr><th>Health:</th><td>' . $row["Health"] . '</td></tr> <tr><th>Max Health:</th><td>' . $row["MaxHP"] . '</td></tr>
+						<tr><th>Pierce Rate:</th><td>' . $row["Pierce Rate"] . '</td></tr> <tr><th>Critical Chance:</th><td>' . $row["Critical Chance"] . '</td></tr> <tr><th>Critical Damage:</th><td>' . $row["Critical Damage"] . '</td></tr> <tr><th>Resistance:</th><td>' . $row["Resistance"] . '</td></tr> <tr><th>Critical Resistance:</th><td>' . $row["Critical Resistance"] . '</td></tr> <tr><th>Critical Defense:</th><td>' . $row["Critical Defense"] . '</td></tr>
+						<tr><th>Regeneration Rate:</th><td>' . $row["Regeneration Rate"] . '</td></tr> <tr><th>Recovery Rate:</th><td>' . $row["Recovery Rate"] . '</td></tr> <tr><th>Lifesteal:</th><td>' . $row["Lifesteal"] . '</td></tr>
+						</table></div></div>';
+						}
+					} else {
+						echo "0 results";
+					}
 					$conn->close();
 					?>
 				</div>
@@ -90,19 +108,11 @@
 						<button type = "button" class="button" onclick = "divDisplay('sortmaxhpdiv','firstdiv','sortccdiv','sortmaxccdiv','sortattkdiv','sortmaxattkdiv','sortdefdiv','sortmaxdefdiv','sorthpdiv')"><i class="fas fa-clipboard-list fa-lg"></i> Max HP</button>
 					</nav>
 					<!--Search Bar-->
-					<form autocomplete="off" action="" method="post">
-					  <div class="autocomplete">
-					    <input id="charSearch" type="text" name="charNameInput" placeholder="Search (Choose One)"/>
-					  </div>
-					  <input type="submit" name="SubmitButton"/>
-					</form>
+					<div class="autocomplete">
+					  <input id="charSearch" type="text" name="charNameInput" placeholder="Search (Choose One)"/>
+					</div>
+					<button type = "button" class="button" onclick="searchSub()"><i class="fas fa-search"></i></button>
 				</div>
-				<!--/*php
-					if(isset($_POST['SubmitButton'])){ //check if form was submitted
-					  $input = $_POST['inputText']; //get input text
-						echo '<html><script>window.location.href="#characterinfo";</script></html>';
-					}
-				-->
 				<br>
 
 				<div id = "firstdiv">
