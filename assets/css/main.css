@@ -1025,9 +1025,6 @@ input, select, textarea {
 			padding: 0.75em 0.75em;
 			vertical-align: top;
 		}
-		table td * {
-			vertical-align: top;
-		}
 
 		table th {
 			color: #ffffff;
