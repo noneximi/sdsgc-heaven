@@ -160,7 +160,7 @@
 							echo '<table><tr><th></th><th>PVP</th><th>Farming</th><th>Passive</th></tr>';
 							// output data of each row
 							while($row = $result->fetch_assoc()) {
-							echo '<tr><td><a onclick="modalFunction(\'' . $row["CharacterName"] . 'Modal\')"><span class="image"><img src="' .  $row["ImageLink"] . '" alt="" /></span></a></td><td>' . $row["PVP"] . '</td><td>'. $row["Farming"]. '</td><td>' . $row["Passive"] . '</td></tr>';
+							echo '<tr><td><a onclick="modalFunction(\'' . $row["CharacterName"] . 'Modal\')"><span class="image"><img src="' .  $row["ImageLink"] . '" alt="" /></span></a></td><th>' . $row["PVP"] . '</th><td>'. $row["Farming"]. '</td><td>' . $row["Passive"] . '</td></tr>';
 							}
 							echo '</table>';
 						} else {
@@ -192,7 +192,7 @@
 							echo '<table><tr><th></th><th>Farming</th><th>PVP</th><th>Passive</th></tr>';
 							// output data of each row
 							while($row = $result->fetch_assoc()) {
-							echo '<tr><td><a onclick="modalFunction(\'' . $row["CharacterName"] . 'Modal\')"><span class="image"><img src="' .  $row["ImageLink"] . '" alt="" /></span></a></td><td>' . $row["Farming"] . '</td><td>'. $row["PVP"]. '</td><td>' . $row["Passive"] . '</td></tr>';
+							echo '<tr><td><a onclick="modalFunction(\'' . $row["CharacterName"] . 'Modal\')"><span class="image"><img src="' .  $row["ImageLink"] . '" alt="" /></span></a></td><th>' . $row["Farming"] . '</th><td>'. $row["PVP"]. '</td><td>' . $row["Passive"] . '</td></tr>';
 							}
 							echo '</table>';
 						} else {
@@ -224,7 +224,7 @@
 							echo '<table><tr><th></th><th>Passive<br>(Click for Info)</th><th>PVP</th><th>Farming</th></tr>';
 							// output data of each row
 							while($row = $result->fetch_assoc()) {
-							echo '<tr><td><a onclick="modalFunction(\'' . $row["CharacterName"] . 'Modal\')"><span class="image"><img src="' .  $row["ImageLink"] . '" alt="" /></span></a></td><td><button onclick="modalFunction(\'' . $row["CharacterName"] . 'PModal\')">' . $row["Passive"] . '</button></td>
+							echo '<tr><td><a onclick="modalFunction(\'' . $row["CharacterName"] . 'Modal\')"><span class="image"><img src="' .  $row["ImageLink"] . '" alt="" /></span></a></td><th><button onclick="modalFunction(\'' . $row["CharacterName"] . 'PModal\')">' . $row["Passive"] . '</button></th>
 							<td>'. $row["PVP"]. '</td><td>' . $row["Farming"] . '</td><div id="' . $row["CharacterName"] . 'PModal" class="modal"><div class="modal-content"><span class="close" onclick="closeButton(\'' . $row["CharacterName"] . 'PModal\')">&times;</span><p><span class="image"><img src="' .  $row["PassImageLink"] . '" alt="" /></span>
 							<br>' . $row["PassiveText"] . '<br><span class="image"><img src="' .  $row["CommImageLink"] . '" alt="" /></span><br>' . $row["CommandmentText"] . '</p></div></div></tr>';
 							}
