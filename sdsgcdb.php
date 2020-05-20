@@ -138,7 +138,7 @@
 				</div>
 
 				<div id = "sortccdiv">
-					<button type = "button" class="button" onclick = "divDisplay('firstdiv','sortccdiv','sortmaxccdiv','sortattkdiv','sortmaxattkdiv','sortdefdiv','sortmaxdefdiv','sorthpdiv','sortmaxhpdiv','sortpvpdiv','sortfarmdiv','sortpassdiv')"><i class="fas fa-th-list fa-lg"></i> Show All</button>
+					<button type = "button" class="button" onclick = "divDisplay('firstdiv','sortccdiv','sortmaxccdiv','sortattkdiv','sortmaxattkdiv','sortdefdiv','sortmaxdefdiv','sorthpdiv','sortmaxhpdiv')"><i class="fas fa-th-list fa-lg"></i> Show All</button>
 					<?php
 						$servername = "pqxt96p7ysz6rn1f.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
 						$username = "h4h3e3qtsw5tyb6s";
@@ -170,7 +170,7 @@
 					?>
 				</div>
 				<div id = "sortmaxccdiv">
-					<button type = "button" class="button" onclick = "divDisplay('firstdiv','sortccdiv','sortmaxccdiv','sortattkdiv','sortmaxattkdiv','sortdefdiv','sortmaxdefdiv','sorthpdiv','sortmaxhpdiv','sortpvpdiv','sortfarmdiv','sortpassdiv')"><i class="fas fa-th-list fa-lg"></i> Show All</button>
+					<button type = "button" class="button" onclick = "divDisplay('firstdiv','sortccdiv','sortmaxccdiv','sortattkdiv','sortmaxattkdiv','sortdefdiv','sortmaxdefdiv','sorthpdiv','sortmaxhpdiv')"><i class="fas fa-th-list fa-lg"></i> Show All</button>
 					<?php
 						$servername = "pqxt96p7ysz6rn1f.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
 						$username = "h4h3e3qtsw5tyb6s";
@@ -202,7 +202,7 @@
 					?>
 				</div>
 				<div id = "sortattkdiv">
-					<button type = "button" class="button" onclick = "divDisplay('firstdiv','sortccdiv','sortmaxccdiv','sortattkdiv','sortmaxattkdiv','sortdefdiv','sortmaxdefdiv','sorthpdiv','sortmaxhpdiv','sortpvpdiv','sortfarmdiv','sortpassdiv')"><i class="fas fa-th-list fa-lg"></i> Show All</button>
+					<button type = "button" class="button" onclick = "divDisplay('firstdiv','sortccdiv','sortmaxccdiv','sortattkdiv','sortmaxattkdiv','sortdefdiv','sortmaxdefdiv','sorthpdiv','sortmaxhpdiv')"><i class="fas fa-th-list fa-lg"></i> Show All</button>
 					<?php
 						$servername = "pqxt96p7ysz6rn1f.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
 						$username = "h4h3e3qtsw5tyb6s";
@@ -234,7 +234,7 @@
 					?>
 				</div>
 				<div id = "sortmaxattkdiv">
-					<button type = "button" class="button" onclick = "divDisplay('firstdiv','sortccdiv','sortmaxccdiv','sortattkdiv','sortmaxattkdiv','sortdefdiv','sortmaxdefdiv','sorthpdiv','sortmaxhpdiv','sortpvpdiv','sortfarmdiv','sortpassdiv')"><i class="fas fa-th-list fa-lg"></i> Show All</button>
+					<button type = "button" class="button" onclick = "divDisplay('firstdiv','sortccdiv','sortmaxccdiv','sortattkdiv','sortmaxattkdiv','sortdefdiv','sortmaxdefdiv','sorthpdiv','sortmaxhpdiv')"><i class="fas fa-th-list fa-lg"></i> Show All</button>
 					<?php
 						$servername = "pqxt96p7ysz6rn1f.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
 						$username = "h4h3e3qtsw5tyb6s";
@@ -266,7 +266,7 @@
 					?>
 				</div>
 				<div id = "sortdefdiv">
-					<button type = "button" class="button" onclick = "divDisplay('firstdiv','sortccdiv','sortmaxccdiv','sortattkdiv','sortmaxattkdiv','sortdefdiv','sortmaxdefdiv','sorthpdiv','sortmaxhpdiv','sortpvpdiv','sortfarmdiv','sortpassdiv')"><i class="fas fa-th-list fa-lg"></i> Show All</button>
+					<button type = "button" class="button" onclick = "divDisplay('firstdiv','sortccdiv','sortmaxccdiv','sortattkdiv','sortmaxattkdiv','sortdefdiv','sortmaxdefdiv','sorthpdiv','sortmaxhpdiv')"><i class="fas fa-th-list fa-lg"></i> Show All</button>
 					<?php
 						$servername = "pqxt96p7ysz6rn1f.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
 						$username = "h4h3e3qtsw5tyb6s";
@@ -298,7 +298,7 @@
 					?>
 				</div>
 				<div id = "sortmaxdefdiv">
-					<button type = "button" class="button" onclick = "divDisplay('firstdiv','sortccdiv','sortmaxccdiv','sortattkdiv','sortmaxattkdiv','sortdefdiv','sortmaxdefdiv','sorthpdiv','sortmaxhpdiv','sortpvpdiv','sortfarmdiv','sortpassdiv')"><i class="fas fa-th-list fa-lg"></i> Show All</button>
+					<button type = "button" class="button" onclick = "divDisplay('firstdiv','sortccdiv','sortmaxccdiv','sortattkdiv','sortmaxattkdiv','sortdefdiv','sortmaxdefdiv','sorthpdiv','sortmaxhpdiv')"><i class="fas fa-th-list fa-lg"></i> Show All</button>
 					<?php
 						$servername = "pqxt96p7ysz6rn1f.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
 						$username = "h4h3e3qtsw5tyb6s";
@@ -330,7 +330,7 @@
 					?>
 				</div>
 				<div id = "sorthpdiv">
-					<button type = "button" class="button" onclick = "divDisplay('firstdiv','sortccdiv','sortmaxccdiv','sortattkdiv','sortmaxattkdiv','sortdefdiv','sortmaxdefdiv','sorthpdiv','sortmaxhpdiv','sortpvpdiv','sortfarmdiv','sortpassdiv')"><i class="fas fa-th-list fa-lg"></i> Show All</button>
+					<button type = "button" class="button" onclick = "divDisplay('firstdiv','sortccdiv','sortmaxccdiv','sortattkdiv','sortmaxattkdiv','sortdefdiv','sortmaxdefdiv','sorthpdiv','sortmaxhpdiv')"><i class="fas fa-th-list fa-lg"></i> Show All</button>
 					<?php
 						$servername = "pqxt96p7ysz6rn1f.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
 						$username = "h4h3e3qtsw5tyb6s";
@@ -362,7 +362,7 @@
 					?>
 				</div>
 				<div id = "sortmaxhpdiv">
-					<button type = "button" class="button" onclick = "divDisplay('firstdiv','sortccdiv','sortmaxccdiv','sortattkdiv','sortmaxattkdiv','sortdefdiv','sortmaxdefdiv','sorthpdiv','sortmaxhpdiv','sortpvpdiv','sortfarmdiv','sortpassdiv')"><i class="fas fa-th-list fa-lg"></i> Show All</button>
+					<button type = "button" class="button" onclick = "divDisplay('firstdiv','sortccdiv','sortmaxccdiv','sortattkdiv','sortmaxattkdiv','sortdefdiv','sortmaxdefdiv','sorthpdiv','sortmaxhpdiv')"><i class="fas fa-th-list fa-lg"></i> Show All</button>
 					<?php
 						$servername = "pqxt96p7ysz6rn1f.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
 						$username = "h4h3e3qtsw5tyb6s";
@@ -385,104 +385,6 @@
 							// output data of each row
 							while($row = $result->fetch_assoc()) {
 							echo '<tr><td><span class="image"><img src="' .  $row["ImageLink"] . '" alt="" /></span></td><td>' . $row["MaxHP"] . '</td><td>'. $row["CharacterName"]. '</td><td>' . $row["InGlobal"] . '</td></tr>';
-							}
-							echo '</table>';
-						} else {
-							echo "0 results";
-						}
-						$conn->close();
-					?>
-				</div>
-				<div id = "sortpvpdiv">
-					<button type = "button" class="button" onclick = "divDisplay('firstdiv','sortccdiv','sortmaxccdiv','sortattkdiv','sortmaxattkdiv','sortdefdiv','sortmaxdefdiv','sorthpdiv','sortmaxhpdiv','sortpvpdiv','sortfarmdiv','sortpassdiv')"><i class="fas fa-th-list fa-lg"></i> Show All</button>
-					<?php
-						$servername = "pqxt96p7ysz6rn1f.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
-						$username = "h4h3e3qtsw5tyb6s";
-						$password = "kwrzwwxn23vj4trr";
-						$dbname = "sdsgc-heaven-db";
-
-						// Create connection
-						$conn = new mysqli($servername, $username, $password);
-
-						// Check connection
-						if ($conn->connect_error) {
-							die("Connection failed: " . $conn->connect_error);
-						}
-
-						$sql = "SELECT `InGlobal`, `CharacterName`, `ImageLink`, `PVP`, `PVPNum` FROM aae99dbcx92f7n09.BaseCharacterStats ORDER BY `PVPNum` DESC";
-						$result = $conn->query($sql);
-
-						if ($result->num_rows > 0) {
-							echo '<table><tr><th></th><th>PVP Rating</th><th>Character</th><th>In Global</th></tr>';
-							// output data of each row
-							while($row = $result->fetch_assoc()) {
-							echo '<tr><td><span class="image"><img src="' .  $row["ImageLink"] . '" alt="" /></span></td><td>' . $row["PVP"] . '</td><td>'. $row["CharacterName"]. '</td><td>' . $row["InGlobal"] . '</td></tr>';
-							}
-							echo '</table>';
-						} else {
-							echo "0 results";
-						}
-						$conn->close();
-					?>
-				</div>
-				<div id = "sortfarmdiv">
-					<button type = "button" class="button" onclick = "divDisplay('firstdiv','sortccdiv','sortmaxccdiv','sortattkdiv','sortmaxattkdiv','sortdefdiv','sortmaxdefdiv','sorthpdiv','sortmaxhpdiv','sortpvpdiv','sortfarmdiv','sortpassdiv')"><i class="fas fa-th-list fa-lg"></i> Show All</button>
-					<?php
-						$servername = "pqxt96p7ysz6rn1f.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
-						$username = "h4h3e3qtsw5tyb6s";
-						$password = "kwrzwwxn23vj4trr";
-						$dbname = "sdsgc-heaven-db";
-
-						// Create connection
-						$conn = new mysqli($servername, $username, $password);
-
-						// Check connection
-						if ($conn->connect_error) {
-							die("Connection failed: " . $conn->connect_error);
-						}
-
-						$sql = "SELECT `InGlobal`, `CharacterName`, `ImageLink`, `Farming`, `FarmingNum` FROM aae99dbcx92f7n09.BaseCharacterStats ORDER BY `FarmingNum` DESC";
-						$result = $conn->query($sql);
-
-						if ($result->num_rows > 0) {
-							echo '<table><tr><th></th><th>Farming Rating</th><th>Character</th><th>In Global</th></tr>';
-							// output data of each row
-							while($row = $result->fetch_assoc()) {
-							echo '<tr><td><span class="image"><img src="' .  $row["ImageLink"] . '" alt="" /></span></td><td>' . $row["Farming"] . '</td><td>'. $row["CharacterName"]. '</td><td>' . $row["InGlobal"] . '</td></tr>';
-							}
-							echo '</table>';
-						} else {
-							echo "0 results";
-						}
-						$conn->close();
-					?>
-				</div>
-				<div id = "sortpassdiv">
-					<button type = "button" class="button" onclick = "divDisplay('firstdiv','sortccdiv','sortmaxccdiv','sortattkdiv','sortmaxattkdiv','sortdefdiv','sortmaxdefdiv','sorthpdiv','sortmaxhpdiv','sortpvpdiv','sortfarmdiv','sortpassdiv')"><i class="fas fa-th-list fa-lg"></i> Show All</button>
-					<?php
-						$servername = "pqxt96p7ysz6rn1f.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
-						$username = "h4h3e3qtsw5tyb6s";
-						$password = "kwrzwwxn23vj4trr";
-						$dbname = "sdsgc-heaven-db";
-
-						// Create connection
-						$conn = new mysqli($servername, $username, $password);
-
-						// Check connection
-						if ($conn->connect_error) {
-							die("Connection failed: " . $conn->connect_error);
-						}
-
-						$sql = "SELECT `InGlobal`, `CharacterName`, `ImageLink`, `Passive`, `PassiveNum`, `PassImageLink`, `PassiveText`, `CommImageLink`, `CommandmentText` FROM aae99dbcx92f7n09.BaseCharacterStats ORDER BY `PassiveNum` DESC";
-						$result = $conn->query($sql);
-
-						if ($result->num_rows > 0) {
-							echo '<table><tr><th></th><th>Passive Rating<br>(Click for Info)</th><th>Character</th><th>In Global</th></tr>';
-							// output data of each row
-							while($row = $result->fetch_assoc()) {
-							echo '<tr><td><span class="image"><img src="' .  $row["ImageLink"] . '" alt="" /></span></td><td><button onclick="modalFunction(\'' . $row["CharacterName"] . 'Modal\')">' . $row["Passive"] . '</button></td><td>'. $row["CharacterName"]. '</td><td>' . $row["InGlobal"] . '</td>
-							<div id="' . $row["CharacterName"] . 'Modal" class="modal"><div class="modal-content"><span class="close" onclick="closeButton(\'' . $row["CharacterName"] . 'Modal\')">&times;</span><p><span class="image"><img src="' .  $row["PassImageLink"] . '" alt="" /></span>
-							<br>' . $row["PassiveText"] . '<br><span class="image"><img src="' .  $row["CommImageLink"] . '" alt="" /></span><br>' . $row["CommandmentText"] . '</p></div></div></tr>';
 							}
 							echo '</table>';
 						} else {
