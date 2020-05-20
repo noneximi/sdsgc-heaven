@@ -124,7 +124,7 @@
 						$result = $conn->query($sql);
 
 						if ($result->num_rows > 0) {
-							echo '<div class="dbTable"><div id="header" class="content"><div class="table-wrapper"><table><tr><th>Image</th><th>PVP Rating</th><th>Farming Rating</th><th>Passive Rating</th></tr>';
+							echo '<div class="dbTable"><div id="header" class="content"><div class="table-wrapper"><table><tr><th>Image</th><th>PVP</th><th>Farming</th><th>Passive</th></tr>';
 							// output data of each row
 							while($row = $result->fetch_assoc()) {
 							echo '<tr><td><a onclick="modalFunction(\'' . $row["CharacterName"] . 'Modal\')"><span class="image"><img src="' .  $row["ImageLink"] . '" alt="" /></span></a></td><td>' . $row["PVP"]. '</td><td>' . $row["Farming"]. '</td><td>' . $row["Passive"]. '</td></tr>';
@@ -138,7 +138,7 @@
 				</div>
 
 				<div id = "sortpvpdiv">
-					<button type = "button" class="button" onclick = "divDisplayP2('firstdiv','sortpvpdiv','sortfarmdiv','sortpassdiv')"><i class="fas fa-th-list fa-lg"></i> Show All</button>
+					<button type = "button" class="button" onclick = "divDisplayP2('firstdiv','sortpvpdiv','sortfarmdiv','sortpassdiv')"><i class="fas fa-sort-alpha-down"></i> Reset</button>
 					<?php
 						$servername = "pqxt96p7ysz6rn1f.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
 						$username = "h4h3e3qtsw5tyb6s";
@@ -153,14 +153,14 @@
 							die("Connection failed: " . $conn->connect_error);
 						}
 
-						$sql = "SELECT `InGlobal`, `CharacterName`, `ImageLink`, `PVP`, `PVPNum` FROM aae99dbcx92f7n09.BaseCharacterStats ORDER BY `PVPNum` DESC";
+						$sql = "SELECT `CharacterName`, `ImageLink`, `PVP`, `PVPNum`, `Farming`, `Passive` FROM aae99dbcx92f7n09.BaseCharacterStats ORDER BY `PVPNum` DESC";
 						$result = $conn->query($sql);
 
 						if ($result->num_rows > 0) {
-							echo '<table><tr><th></th><th>PVP Rating</th><th>Character</th><th>In Global</th></tr>';
+							echo '<table><tr><th></th><th>PVP</th><th>Farming</th><th>Passive</th></tr>';
 							// output data of each row
 							while($row = $result->fetch_assoc()) {
-							echo '<tr><td><a onclick="modalFunction(\'' . $row["CharacterName"] . 'Modal\')"><span class="image"><img src="' .  $row["ImageLink"] . '" alt="" /></span></a></td><td>' . $row["PVP"] . '</td><td>'. $row["CharacterName"]. '</td><td>' . $row["InGlobal"] . '</td></tr>';
+							echo '<tr><td><a onclick="modalFunction(\'' . $row["CharacterName"] . 'Modal\')"><span class="image"><img src="' .  $row["ImageLink"] . '" alt="" /></span></a></td><td>' . $row["PVP"] . '</td><td>'. $row["Farming"]. '</td><td>' . $row["Passive"] . '</td></tr>';
 							}
 							echo '</table>';
 						} else {
@@ -170,7 +170,7 @@
 					?>
 				</div>
 				<div id = "sortfarmdiv">
-					<button type = "button" class="button" onclick = "divDisplayP2('firstdiv','sortpvpdiv','sortfarmdiv','sortpassdiv')"><i class="fas fa-th-list fa-lg"></i> Show All</button>
+					<button type = "button" class="button" onclick = "divDisplayP2('firstdiv','sortpvpdiv','sortfarmdiv','sortpassdiv')"><i class="fas fa-sort-alpha-down"></i> Reset</button>
 					<?php
 						$servername = "pqxt96p7ysz6rn1f.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
 						$username = "h4h3e3qtsw5tyb6s";
@@ -185,14 +185,14 @@
 							die("Connection failed: " . $conn->connect_error);
 						}
 
-						$sql = "SELECT `InGlobal`, `CharacterName`, `ImageLink`, `Farming`, `FarmingNum` FROM aae99dbcx92f7n09.BaseCharacterStats ORDER BY `FarmingNum` DESC";
+						$sql = "SELECT `CharacterName`, `ImageLink`, `Farming`, `FarmingNum`, `PVP`, `Passive` FROM aae99dbcx92f7n09.BaseCharacterStats ORDER BY `FarmingNum` DESC";
 						$result = $conn->query($sql);
 
 						if ($result->num_rows > 0) {
-							echo '<table><tr><th></th><th>Farming Rating</th><th>Character</th><th>In Global</th></tr>';
+							echo '<table><tr><th></th><th>Farming</th><th>PVP</th><th>Passive</th></tr>';
 							// output data of each row
 							while($row = $result->fetch_assoc()) {
-							echo '<tr><td><a onclick="modalFunction(\'' . $row["CharacterName"] . 'Modal\')"><span class="image"><img src="' .  $row["ImageLink"] . '" alt="" /></span></a></td><td>' . $row["Farming"] . '</td><td>'. $row["CharacterName"]. '</td><td>' . $row["InGlobal"] . '</td></tr>';
+							echo '<tr><td><a onclick="modalFunction(\'' . $row["CharacterName"] . 'Modal\')"><span class="image"><img src="' .  $row["ImageLink"] . '" alt="" /></span></a></td><td>' . $row["Farming"] . '</td><td>'. $row["PVP"]. '</td><td>' . $row["Passive"] . '</td></tr>';
 							}
 							echo '</table>';
 						} else {
@@ -202,7 +202,7 @@
 					?>
 				</div>
 				<div id = "sortpassdiv">
-					<button type = "button" class="button" onclick = "divDisplayP2('firstdiv','sortpvpdiv','sortfarmdiv','sortpassdiv')"><i class="fas fa-th-list fa-lg"></i> Show All</button>
+					<button type = "button" class="button" onclick = "divDisplayP2('firstdiv','sortpvpdiv','sortfarmdiv','sortpassdiv')"><i class="fas fa-sort-alpha-down"></i> Reset</button>
 					<?php
 						$servername = "pqxt96p7ysz6rn1f.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
 						$username = "h4h3e3qtsw5tyb6s";
@@ -217,15 +217,15 @@
 							die("Connection failed: " . $conn->connect_error);
 						}
 
-						$sql = "SELECT `InGlobal`, `CharacterName`, `ImageLink`, `Passive`, `PassiveNum`, `PassImageLink`, `PassiveText`, `CommImageLink`, `CommandmentText` FROM aae99dbcx92f7n09.BaseCharacterStats ORDER BY `PassiveNum` DESC";
+						$sql = "SELECT `CharacterName`, `ImageLink`, `Passive`, `PassiveNum`, `PassImageLink`, `PassiveText`, `CommImageLink`, `CommandmentText`, `PVP`, `Farming` FROM aae99dbcx92f7n09.BaseCharacterStats ORDER BY `PassiveNum` DESC";
 						$result = $conn->query($sql);
 
 						if ($result->num_rows > 0) {
-							echo '<table><tr><th></th><th>Passive Rating<br>(Click for Info)</th><th>Character</th><th>In Global</th></tr>';
+							echo '<table><tr><th></th><th>Passive<br>(Click for Info)</th><th>PVP</th><th>Farming</th></tr>';
 							// output data of each row
 							while($row = $result->fetch_assoc()) {
 							echo '<tr><td><a onclick="modalFunction(\'' . $row["CharacterName"] . 'Modal\')"><span class="image"><img src="' .  $row["ImageLink"] . '" alt="" /></span></a></td><td><button onclick="modalFunction(\'' . $row["CharacterName"] . 'PModal\')">' . $row["Passive"] . '</button></td>
-							<td>'. $row["CharacterName"]. '</td><td>' . $row["InGlobal"] . '</td><div id="' . $row["CharacterName"] . 'PModal" class="modal"><div class="modal-content"><span class="close" onclick="closeButton(\'' . $row["CharacterName"] . 'PModal\')">&times;</span><p><span class="image"><img src="' .  $row["PassImageLink"] . '" alt="" /></span>
+							<td>'. $row["PVP"]. '</td><td>' . $row["Farming"] . '</td><div id="' . $row["CharacterName"] . 'PModal" class="modal"><div class="modal-content"><span class="close" onclick="closeButton(\'' . $row["CharacterName"] . 'PModal\')">&times;</span><p><span class="image"><img src="' .  $row["PassImageLink"] . '" alt="" /></span>
 							<br>' . $row["PassiveText"] . '<br><span class="image"><img src="' .  $row["CommImageLink"] . '" alt="" /></span><br>' . $row["CommandmentText"] . '</p></div></div></tr>';
 							}
 							echo '</table>';
