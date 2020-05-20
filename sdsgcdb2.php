@@ -51,6 +51,23 @@
 					}
 					echo "Connected to $dbname successfully (pls ignore this mssg)<br>";
 					echo "Page may take a moment to load";
+					$sql = "SELECT * FROM aae99dbcx92f7n09.BaseCharacterStats ORDER BY `CharacterName` DESC";
+					$result = $conn->query($sql);
+
+					if ($result->num_rows > 0) {
+						// output data of each row
+						while($row = $result->fetch_assoc()) {
+						echo '<div id="' . $row["CharacterName"] . 'Modal" class="modal"><div class="modal-content"><span class="close" onclick="closeButton(\'' . $row["CharacterName"] . 'Modal\')">&times;</span><h2 style="text-align:center;"><span class="image"><img src="' .  $row["ImageLink"] . '" alt="" /></span>' . $row["CharacterName"] . '</h2>
+						<p><span class="image"><img src="' .  $row["PassImageLink"] . '" alt="" /></span><br>' . $row["PassiveText"] . '<br><span class="image"><img src="' .  $row["CommImageLink"] . '" alt="" /></span><br>' . $row["CommandmentText"] . '</p>
+						<table> <tr><th>In Global?</th><td>' . $row["InGlobal"] . '</td></tr> <tr><th>Combat Class:</th><td>' . $row["Combat Class"] . '</td></tr> <tr><th>Max Combat Class:</th><td>' . $row["MaxCC"] . '</td></tr> <tr><th>PVP Rating:</th><td>' . $row["PVP"] . '</td></tr> <tr><th>Farming Rating:</th><td>' . $row["Farming"] . '</td></tr> <tr><th>Passive Rating:</th><td>' . $row["Passive"] . '</td></tr>
+						<tr><th>Attack:</th><td>' . $row["Attack"] . '</td></tr> <tr><th>Max Attack:</th><td>' . $row["MaxAttack"] . '</td></tr> <tr><th>Defense:</th><td>' . $row["Defense"] . '</td></tr> <tr><th>Max Defense:</th><td>' . $row["MaxDefense"] . '</td></tr> <tr><th>Health:</th><td>' . $row["Health"] . '</td></tr> <tr><th>Max Health:</th><td>' . $row["MaxHP"] . '</td></tr>
+						<tr><th>Pierce Rate:</th><td>' . $row["Pierce Rate"] . '%</td></tr> <tr><th>Critical Chance:</th><td>' . $row["Critical Chance"] . '%</td></tr> <tr><th>Critical Damage:</th><td>' . $row["Critical Damage"] . '%</td></tr> <tr><th>Resistance:</th><td>' . $row["Resistance"] . '%</td></tr> <tr><th>Critical Resistance:</th><td>' . $row["Critical Resistance"] . '%</td></tr> <tr><th>Critical Defense:</th><td>' . $row["Critical Defense"] . '%</td></tr>
+						<tr><th>Regeneration Rate:</th><td>' . $row["Regeneration Rate"] . '%</td></tr> <tr><th>Recovery Rate:</th><td>' . $row["Recovery Rate"] . '%</td></tr> <tr><th>Lifesteal:</th><td>' . $row["Lifesteal"] . '%</td></tr>
+						</table></div></div>';
+						}
+					} else {
+						echo "0 results";
+					}
 					$conn->close();
 					?>
 				</div>
@@ -58,11 +75,6 @@
 				<!-- Main -->
 				<div id="main">
 
-					<article id = "characterinfo">
-						<?php
-							echo "character page WIP";
-						?>
-					</article>
 				</div>
 
 				<!-- Header -->
@@ -71,8 +83,8 @@
 
 					<div class="content">
 					 <div class="inner">
-						 <h1>SDSGC Character Ratings (WIP)</h1>
-						 <h4>Sort All SDSGC Characters' Ratings</h4>
+						 <h1>SDSGC Character Ratings</h1>
+						 <h4>Sort All SDSGC Characters' Ratings (Click Char Images for Info)</h4>
 						 <p>Data sources: <a href="https://docs.google.com/spreadsheets/d/1LPWgA2gJWagYyDwtXKbzQ0G5xuZ0Q4_p2Hvrs01fuM4/" target=_blank>Google Sheets</a>, <a href="https://gcdatabase.com/index.html" target=_blank>GCDatabase</a></p>
 					 </div>
 				 </div>
@@ -120,7 +132,7 @@
 							echo '<div class="dbTable"><div id="header" class="content"><div class="table-wrapper"><table><tr><td>Image</td><td>Character</td><td>PVP Rating</td><td>Farming Rating</td><td>Passive Rating</td><td>In Global</td></tr>';
 							// output data of each row
 							while($row = $result->fetch_assoc()) {
-							echo '<tr><td><a href="#characterinfo"><span class="image"><img src="' .  $row["ImageLink"] . '" alt="" /></span></a></td><td>'. $row["CharacterName"]. '</td><td>' . $row["PVP"]. '</td><td>' . $row["Farming"]. '</td><td>' . $row["Passive"]. '</td><td>' . $row["InGlobal"] . '</td></tr>';
+							echo '<tr><td><a onclick="modalFunction(\'' . $row["CharacterName"] . 'Modal\')"><span class="image"><img src="' .  $row["ImageLink"] . '" alt="" /></span></a></td><td>'. $row["CharacterName"]. '</td><td>' . $row["PVP"]. '</td><td>' . $row["Farming"]. '</td><td>' . $row["Passive"]. '</td><td>' . $row["InGlobal"] . '</td></tr>';
 							}
 							echo '</table></div></div></div>';
 						} else {
@@ -153,7 +165,7 @@
 							echo '<table><tr><th></th><th>PVP Rating</th><th>Character</th><th>In Global</th></tr>';
 							// output data of each row
 							while($row = $result->fetch_assoc()) {
-							echo '<tr><td><span class="image"><img src="' .  $row["ImageLink"] . '" alt="" /></span></td><td>' . $row["PVP"] . '</td><td>'. $row["CharacterName"]. '</td><td>' . $row["InGlobal"] . '</td></tr>';
+							echo '<tr><td><a onclick="modalFunction(\'' . $row["CharacterName"] . 'Modal\')"><span class="image"><img src="' .  $row["ImageLink"] . '" alt="" /></span></a></td><td>' . $row["PVP"] . '</td><td>'. $row["CharacterName"]. '</td><td>' . $row["InGlobal"] . '</td></tr>';
 							}
 							echo '</table>';
 						} else {
@@ -185,7 +197,7 @@
 							echo '<table><tr><th></th><th>Farming Rating</th><th>Character</th><th>In Global</th></tr>';
 							// output data of each row
 							while($row = $result->fetch_assoc()) {
-							echo '<tr><td><span class="image"><img src="' .  $row["ImageLink"] . '" alt="" /></span></td><td>' . $row["Farming"] . '</td><td>'. $row["CharacterName"]. '</td><td>' . $row["InGlobal"] . '</td></tr>';
+							echo '<tr><td><a onclick="modalFunction(\'' . $row["CharacterName"] . 'Modal\')"><span class="image"><img src="' .  $row["ImageLink"] . '" alt="" /></span></a></td><td>' . $row["Farming"] . '</td><td>'. $row["CharacterName"]. '</td><td>' . $row["InGlobal"] . '</td></tr>';
 							}
 							echo '</table>';
 						} else {
@@ -217,8 +229,8 @@
 							echo '<table><tr><th></th><th>Passive Rating<br>(Click for Info)</th><th>Character</th><th>In Global</th></tr>';
 							// output data of each row
 							while($row = $result->fetch_assoc()) {
-							echo '<tr><td><span class="image"><img src="' .  $row["ImageLink"] . '" alt="" /></span></td><td><button onclick="modalFunction(\'' . $row["CharacterName"] . 'Modal\')">' . $row["Passive"] . '</button></td><td>'. $row["CharacterName"]. '</td><td>' . $row["InGlobal"] . '</td>
-							<div id="' . $row["CharacterName"] . 'Modal" class="modal"><div class="modal-content"><span class="close" onclick="closeButton(\'' . $row["CharacterName"] . 'Modal\')">&times;</span><p><span class="image"><img src="' .  $row["PassImageLink"] . '" alt="" /></span>
+							echo '<tr><td><a onclick="modalFunction(\'' . $row["CharacterName"] . 'Modal\')"><span class="image"><img src="' .  $row["ImageLink"] . '" alt="" /></span></a></td><td><button onclick="modalFunction(\'' . $row["CharacterName"] . 'PModal\')">' . $row["Passive"] . '</button></td>
+							<td>'. $row["CharacterName"]. '</td><td>' . $row["InGlobal"] . '</td><div id="' . $row["CharacterName"] . 'PModal" class="modal"><div class="modal-content"><span class="close" onclick="closeButton(\'' . $row["CharacterName"] . 'PModal\')">&times;</span><p><span class="image"><img src="' .  $row["PassImageLink"] . '" alt="" /></span>
 							<br>' . $row["PassiveText"] . '<br><span class="image"><img src="' .  $row["CommImageLink"] . '" alt="" /></span><br>' . $row["CommandmentText"] . '</p></div></div></tr>';
 							}
 							echo '</table>';
