@@ -85,7 +85,7 @@
 					<div class="content">
 					 <div class="inner">
 						 <h1>SDSGC Character Stats</h1>
-						 <h4>Sort All SDSGC Characters' Stats (Click Char Images for Info)</h4>
+						 <h4>Sort All SDSGC Characters' Stats (Click Character Images for Info)</h4>
 						 <h4>Note: Max Stats Data is ungeared - not all character data is available; some new JP releases</h4>
 						 <p>Data sources: <a href="https://docs.google.com/spreadsheets/d/1LPWgA2gJWagYyDwtXKbzQ0G5xuZ0Q4_p2Hvrs01fuM4/" target=_blank>Google Sheets</a>, <a href="https://gcdatabase.com/index.html" target=_blank>GCDatabase</a></p>
 					 </div>
