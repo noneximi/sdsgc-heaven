@@ -144,7 +144,7 @@
 				</div>
 
 				<div id = "sortccdiv">
-					<button type = "button" class="button" onclick = "divDisplay('firstdiv','sortccdiv','sortmaxccdiv','sortattkdiv','sortmaxattkdiv','sortdefdiv','sortmaxdefdiv','sorthpdiv','sortmaxhpdiv')"><i class="fas fa-sort-alpha-down"></i> Reset</button>
+					<button type = "button" class="button" onclick = "divDisplay('firstdiv','sortccdiv','sortmaxccdiv','sortattkdiv','sortmaxattkdiv','sortdefdiv','sortmaxdefdiv','sorthpdiv','sortmaxhpdiv')"><i class="fas fa-sort-alpha-down fa-lg"></i> Reset</button>
 					<?php
 						$servername = "pqxt96p7ysz6rn1f.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
 						$username = "h4h3e3qtsw5tyb6s";
@@ -176,7 +176,7 @@
 					?>
 				</div>
 				<div id = "sortmaxccdiv">
-					<button type = "button" class="button" onclick = "divDisplay('firstdiv','sortccdiv','sortmaxccdiv','sortattkdiv','sortmaxattkdiv','sortdefdiv','sortmaxdefdiv','sorthpdiv','sortmaxhpdiv')"><i class="fas fa-sort-alpha-down"></i> Reset</button>
+					<button type = "button" class="button" onclick = "divDisplay('firstdiv','sortccdiv','sortmaxccdiv','sortattkdiv','sortmaxattkdiv','sortdefdiv','sortmaxdefdiv','sorthpdiv','sortmaxhpdiv')"><i class="fas fa-sort-alpha-down fa-lg"></i> Reset</button>
 					<?php
 						$servername = "pqxt96p7ysz6rn1f.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
 						$username = "h4h3e3qtsw5tyb6s";
@@ -208,7 +208,7 @@
 					?>
 				</div>
 				<div id = "sortattkdiv">
-					<button type = "button" class="button" onclick = "divDisplay('firstdiv','sortccdiv','sortmaxccdiv','sortattkdiv','sortmaxattkdiv','sortdefdiv','sortmaxdefdiv','sorthpdiv','sortmaxhpdiv')"><i class="fas fa-sort-alpha-down"></i> Reset</button>
+					<button type = "button" class="button" onclick = "divDisplay('firstdiv','sortccdiv','sortmaxccdiv','sortattkdiv','sortmaxattkdiv','sortdefdiv','sortmaxdefdiv','sorthpdiv','sortmaxhpdiv')"><i class="fas fa-sort-alpha-down fa-lg"></i> Reset</button>
 					<?php
 						$servername = "pqxt96p7ysz6rn1f.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
 						$username = "h4h3e3qtsw5tyb6s";
@@ -240,7 +240,7 @@
 					?>
 				</div>
 				<div id = "sortmaxattkdiv">
-					<button type = "button" class="button" onclick = "divDisplay('firstdiv','sortccdiv','sortmaxccdiv','sortattkdiv','sortmaxattkdiv','sortdefdiv','sortmaxdefdiv','sorthpdiv','sortmaxhpdiv')"><i class="fas fa-sort-alpha-down"></i> Reset</button>
+					<button type = "button" class="button" onclick = "divDisplay('firstdiv','sortccdiv','sortmaxccdiv','sortattkdiv','sortmaxattkdiv','sortdefdiv','sortmaxdefdiv','sorthpdiv','sortmaxhpdiv')"><i class="fas fa-sort-alpha-down fa-lg"></i> Reset</button>
 					<?php
 						$servername = "pqxt96p7ysz6rn1f.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
 						$username = "h4h3e3qtsw5tyb6s";
@@ -272,7 +272,7 @@
 					?>
 				</div>
 				<div id = "sortdefdiv">
-					<button type = "button" class="button" onclick = "divDisplay('firstdiv','sortccdiv','sortmaxccdiv','sortattkdiv','sortmaxattkdiv','sortdefdiv','sortmaxdefdiv','sorthpdiv','sortmaxhpdiv')"><i class="fas fa-sort-alpha-down"></i> Reset</button>
+					<button type = "button" class="button" onclick = "divDisplay('firstdiv','sortccdiv','sortmaxccdiv','sortattkdiv','sortmaxattkdiv','sortdefdiv','sortmaxdefdiv','sorthpdiv','sortmaxhpdiv')"><i class="fas fa-sort-alpha-down fa-lg"></i> Reset</button>
 					<?php
 						$servername = "pqxt96p7ysz6rn1f.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
 						$username = "h4h3e3qtsw5tyb6s";
@@ -304,7 +304,7 @@
 					?>
 				</div>
 				<div id = "sortmaxdefdiv">
-					<button type = "button" class="button" onclick = "divDisplay('firstdiv','sortccdiv','sortmaxccdiv','sortattkdiv','sortmaxattkdiv','sortdefdiv','sortmaxdefdiv','sorthpdiv','sortmaxhpdiv')"><i class="fas fa-sort-alpha-down"></i> Reset</button>
+					<button type = "button" class="button" onclick = "divDisplay('firstdiv','sortccdiv','sortmaxccdiv','sortattkdiv','sortmaxattkdiv','sortdefdiv','sortmaxdefdiv','sorthpdiv','sortmaxhpdiv')"><i class="fas fa-sort-alpha-down fa-lg"></i> Reset</button>
 					<?php
 						$servername = "pqxt96p7ysz6rn1f.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
 						$username = "h4h3e3qtsw5tyb6s";
@@ -336,7 +336,7 @@
 					?>
 				</div>
 				<div id = "sorthpdiv">
-					<button type = "button" class="button" onclick = "divDisplay('firstdiv','sortccdiv','sortmaxccdiv','sortattkdiv','sortmaxattkdiv','sortdefdiv','sortmaxdefdiv','sorthpdiv','sortmaxhpdiv')"><i class="fas fa-sort-alpha-down"></i> Reset</button>
+					<button type = "button" class="button" onclick = "divDisplay('firstdiv','sortccdiv','sortmaxccdiv','sortattkdiv','sortmaxattkdiv','sortdefdiv','sortmaxdefdiv','sorthpdiv','sortmaxhpdiv')"><i class="fas fa-sort-alpha-down fa-lg"></i> Reset</button>
 					<?php
 						$servername = "pqxt96p7ysz6rn1f.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
 						$username = "h4h3e3qtsw5tyb6s";
@@ -368,7 +368,7 @@
 					?>
 				</div>
 				<div id = "sortmaxhpdiv">
-					<button type = "button" class="button" onclick = "divDisplay('firstdiv','sortccdiv','sortmaxccdiv','sortattkdiv','sortmaxattkdiv','sortdefdiv','sortmaxdefdiv','sorthpdiv','sortmaxhpdiv')"><i class="fas fa-sort-alpha-down"></i> Reset</button>
+					<button type = "button" class="button" onclick = "divDisplay('firstdiv','sortccdiv','sortmaxccdiv','sortattkdiv','sortmaxattkdiv','sortdefdiv','sortmaxdefdiv','sorthpdiv','sortmaxhpdiv')"><i class="fas fa-sort-alpha-down fa-lg"></i> Reset</button>
 					<?php
 						$servername = "pqxt96p7ysz6rn1f.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
 						$username = "h4h3e3qtsw5tyb6s";
