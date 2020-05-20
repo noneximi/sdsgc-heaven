@@ -105,7 +105,7 @@ function autocomplete(inp, arr) {
 }
 
 /*show/close divs for character tables*/
-function divDisplay(a, b, c, d, e, f, g, h, i, j, k, l) {
+function divDisplay(a, b, c, d, e, f, g, h, i) {
   var aa = document.getElementById(a);
   var bb = document.getElementById(b);
   var cc = document.getElementById(c);
@@ -115,9 +115,6 @@ function divDisplay(a, b, c, d, e, f, g, h, i, j, k, l) {
   var gg = document.getElementById(g);
   var hh = document.getElementById(h);
   var ii = document.getElementById(i);
-  var jj = document.getElementById(j);
-  var kk = document.getElementById(k);
-  var ll = document.getElementById(l);
   bb.style.display = "none";
   cc.style.display = "none";
   dd.style.display = "none";
@@ -126,9 +123,6 @@ function divDisplay(a, b, c, d, e, f, g, h, i, j, k, l) {
   gg.style.display = "none";
   hh.style.display = "none";
   ii.style.display = "none";
-  jj.style.display = "none";
-  kk.style.display = "none";
-  ll.style.display = "none";
   aa.style.display = "block";
 }
 function divDisplayP2(a, b, c, d) {
