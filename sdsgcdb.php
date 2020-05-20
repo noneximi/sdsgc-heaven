@@ -104,7 +104,7 @@
 					<!--Search Bar-->
 					<nav>
 						<div class="autocomplete">
-					  	<input id="charSearch" type="text" name="charNameInput" placeholder="Search (Choose One)" autocomplete="off"/>
+					  	<input id="charSearch" type="text" name="charNameInput" placeholder="Search (Choose One)" autocomplete="off" onfocus="this.value=''"/>
 						</div>
 						<button type = "button" class="button" onclick="searchSub()"><i class="fas fa-search"></i></button>
 					</nav>
