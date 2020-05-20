@@ -103,6 +103,11 @@ function autocomplete(inp, arr) {
       closeAllLists(e.target);
   });
 }
+/*handle search*/
+function searchSub() {
+  var searchT = document.getElementById('charSearch').value;
+  modalFunction(searchT);
+}
 
 /*show/close divs for character tables*/
 function divDisplay(a, b, c, d, e, f, g, h, i) {
