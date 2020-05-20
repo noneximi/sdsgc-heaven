@@ -1067,14 +1067,6 @@ input, select, textarea {
 				border-top: 0;
 			}
 
-			@media screen and (max-width: 480px) {
-
-				.dbTable {
-					padding-left: 100px;
-				}
-
-			}
-
 /* Button */
 
 	input[type="submit"],
