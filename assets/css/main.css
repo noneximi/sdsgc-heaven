@@ -1023,7 +1023,10 @@ input, select, textarea {
 
 		table td {
 			padding: 0.75em 0.75em;
-			vertical-align: text-top;
+			vertical-align: top;
+		}
+		table td * {
+			vertical-align: top;
 		}
 
 		table th {
