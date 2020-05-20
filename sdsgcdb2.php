@@ -138,7 +138,7 @@
 				</div>
 
 				<div id = "sortpvpdiv">
-					<button type = "button" class="button" onclick = "divDisplayP2('firstdiv','sortpvpdiv','sortfarmdiv','sortpassdiv')"><i class="fas fa-sort-alpha-down"></i> Reset</button>
+					<button type = "button" class="button" onclick = "divDisplayP2('firstdiv','sortpvpdiv','sortfarmdiv','sortpassdiv')"><i class="fas fa-sort-alpha-down fa-lg"></i> Reset</button>
 					<?php
 						$servername = "pqxt96p7ysz6rn1f.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
 						$username = "h4h3e3qtsw5tyb6s";
@@ -170,7 +170,7 @@
 					?>
 				</div>
 				<div id = "sortfarmdiv">
-					<button type = "button" class="button" onclick = "divDisplayP2('firstdiv','sortpvpdiv','sortfarmdiv','sortpassdiv')"><i class="fas fa-sort-alpha-down"></i> Reset</button>
+					<button type = "button" class="button" onclick = "divDisplayP2('firstdiv','sortpvpdiv','sortfarmdiv','sortpassdiv')"><i class="fas fa-sort-alpha-down fa-lg"></i> Reset</button>
 					<?php
 						$servername = "pqxt96p7ysz6rn1f.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
 						$username = "h4h3e3qtsw5tyb6s";
@@ -202,7 +202,7 @@
 					?>
 				</div>
 				<div id = "sortpassdiv">
-					<button type = "button" class="button" onclick = "divDisplayP2('firstdiv','sortpvpdiv','sortfarmdiv','sortpassdiv')"><i class="fas fa-sort-alpha-down"></i> Reset</button>
+					<button type = "button" class="button" onclick = "divDisplayP2('firstdiv','sortpvpdiv','sortfarmdiv','sortpassdiv')"><i class="fas fa-sort-alpha-down fa-lg"></i> Reset</button>
 					<?php
 						$servername = "pqxt96p7ysz6rn1f.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
 						$username = "h4h3e3qtsw5tyb6s";
