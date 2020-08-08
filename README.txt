@@ -1,4 +1,4 @@
 Heaven Website for SDSGC Guild
-Leader: Arakito (Ephemeral#0781)
+Leader: Arakito (Ephemeral#2538)
 
-Webmaster: Dream (noneximi#7777)
+Webmaster: Dream (noneximi#4253)
