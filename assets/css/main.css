@@ -1806,5 +1806,8 @@ input, select, textarea {
 		}
 		.gallery-wrapper ul li{
 			display: inline-block;		/* sit wrappers in rows, not column block */
-
+		}
+		ul.rimggallery
+		{
+			list-style-type: none;	/* hiding the bullets from ul */
 		}
