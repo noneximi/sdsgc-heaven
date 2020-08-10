@@ -158,7 +158,7 @@
 						$result = $conn->query($sql);
 
 						if ($result->num_rows > 0) {
-							echo '<table>';
+							echo '<div class="table-wrapper"><table>';
 							// output data of each row
 							$tbcount = 0;
 							while($row = $result->fetch_assoc()) {
@@ -167,7 +167,7 @@
 								if ($tbcount+1 % 4 == 0){echo '</tr>';}
 								$tbcount++;
 							}
-							echo '</tr></table>';
+							echo '</tr></table></div>';
 						} else {
 							echo "0 results";
 						}
