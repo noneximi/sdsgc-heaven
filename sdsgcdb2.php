@@ -203,16 +203,33 @@
 							die("Connection failed: " . $conn->connect_error);
 						}
 
-						$sql = "SELECT `CharacterName`, `ImageLink`, `Farming`, `FarmingNum`, `PVP`, `Passive` FROM aae99dbcx92f7n09.BaseCharacterStats ORDER BY `FarmingNum` DESC";
+						$sql = "SELECT `CharacterName`, `ImageLink`, `Farming`, `FarmingNum` FROM aae99dbcx92f7n09.BaseCharacterStats ORDER BY `FarmingNum` DESC";
 						$result = $conn->query($sql);
 
 						if ($result->num_rows > 0) {
-							echo '<table>';
 							// output data of each row
+							$tbcount = 0;
+							$farmtracker = 5;
+							echo '<div id="header"><h2>Farming Ratings</h2></div><h3>SS</h3>';
+							echo '<div class="table-wrapper"><table>';
 							while($row = $result->fetch_assoc()) {
-							echo '<tr><td></td><td>Farming</td><td>PVP</td><td>Passive</td></tr><tr><td><a onclick="modalFunction(\'' . $row["CharacterName"] . 'Modal\')"><span class="image"><img src="' .  $row["ImageLink"] . '" alt="" /></span></a></td><td>' . $row["Farming"] . '</td><td>'. $row["PVP"]. '</td><td>' . $row["Passive"] . '</td></tr>';
+								if ($row["FarmingNum"] != $farmtracker){
+									if($tbcount % 4 == 0){
+										echo '</table></div><h3>' . $row["PVP"] . '</h3><div class="table-wrapper"><table>';}
+									else{
+										echo '</tr></table></div><h3>' . $row["PVP"] . '</h3><div class="table-wrapper"><table>';}
+									$farmtracker--;
+									$tbcount = 0;
+								}
+								if ($tbcount % 4 == 0){echo '<tr>';}
+								echo '<td><a onclick="modalFunction(\'' . $row["CharacterName"] . 'Modal\')"><span class="image"><img class="chartable" src="' .  $row["ImageLink"] . '" alt="" /></span></a></td><td>' . $row["Farming"] . '</td>';
+								if ($tbcount+1 % 4 == 0){echo '</tr>';}
+								$tbcount++;
 							}
-							echo '</table>';
+							if($tbcount % 4 == 0){
+								echo '</table></div>';}
+							else{
+								echo '</tr></table></div>';}
 						} else {
 							echo "0 results";
 						}
