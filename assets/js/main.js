@@ -10,6 +10,10 @@ $(function (){
 $(function (){
   $("#altheader").load("https://noneximi.github.io/sdsgc-heaven/altheader.html");
 });
+function dbloaded(mess){
+  var lm = document.getElementById(mess);
+  lm.style.display = "none";
+}
 function autocomplete(inp, arr) {
   /*the autocomplete function takes two arguments,
   the text field element and an array of possible autocompleted values:*/
