@@ -778,9 +778,6 @@ input, select, textarea {
 
 			img.chartable {
 				width: 75%;
-				border: 0;
-				display: inline-block;
-				position: relative;
 			}
 			.image.main {
 				margin: 2rem 0;
@@ -792,9 +789,6 @@ input, select, textarea {
 
 			img.chartable {
 				width: 75%;
-				border: 0;
-				display: inline-block;
-				position: relative;
 			}
 			.image.main {
 				margin: 1.5rem 0;
