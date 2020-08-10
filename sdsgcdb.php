@@ -29,7 +29,7 @@
 		}
 		</style>
 	</head>
-	<body class="is-preload">
+	<body class="is-preload" onload="dbloaded()">
 
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -49,7 +49,7 @@
 					if ($conn->connect_error) {
 						die("Connection failed: " . $conn->connect_error);
 					}
-					echo '<div id="dbmessage" onload="dbloaded()">Connected to ' . $dbname . ' successfully (pls ignore this mssg)<br>Page may take a moment to load</div>';
+					echo '<div id="dbmessage">Connected to ' . $dbname . ' successfully (pls ignore this mssg)<br>Page may take a moment to load</div>';
 					$sql = "SELECT * FROM aae99dbcx92f7n09.BaseCharacterStats ORDER BY `CharacterName` DESC";
 					$result = $conn->query($sql);
 
