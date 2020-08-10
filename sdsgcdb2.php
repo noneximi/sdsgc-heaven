@@ -222,7 +222,7 @@
 									$tbcount = 0;
 								}
 								if ($tbcount % 4 == 0){echo '<tr>';}
-								echo '<td><a onclick="modalFunction(\'' . $row["CharacterName"] . 'Modal\')"><span class="image"><img class="chartable" src="' .  $row["ImageLink"] . '" alt="" /></span></a></td><td>' . $row["Farming"] . '</td>';
+								echo '<td><a onclick="modalFunction(\'' . $row["CharacterName"] . 'Modal\')"><span class="image"><img class="chartable" src="' .  $row["ImageLink"] . '" alt="" /></span></a></td>';
 								if ($tbcount+1 % 4 == 0){echo '</tr>';}
 								$tbcount++;
 							}
