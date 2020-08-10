@@ -162,7 +162,7 @@
 							// output data of each row
 							$tbcount = 0;
 							$pvptracker = 5;
-							echo '<tr><h4>SS</h4></tr>'
+							echo '<tr><h4>SS</h4></tr>';
 							while($row = $result->fetch_assoc()) {
 								$rowpvp = $row["PVPNum"];
 								if ($rowpvp != $pvptracker){
