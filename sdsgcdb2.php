@@ -252,18 +252,33 @@
 							die("Connection failed: " . $conn->connect_error);
 						}
 
-						$sql = "SELECT `CharacterName`, `ImageLink`, `Passive`, `PassiveNum`, `PassImageLink`, `PassiveText`, `CommImageLink`, `CommandmentText`, `PVP`, `Farming` FROM aae99dbcx92f7n09.BaseCharacterStats ORDER BY `PassiveNum` DESC";
+						$sql = "SELECT `CharacterName`, `ImageLink`, `Passive`, `PassiveNum` FROM aae99dbcx92f7n09.BaseCharacterStats ORDER BY `PassiveNum` DESC";
 						$result = $conn->query($sql);
 
 						if ($result->num_rows > 0) {
-							echo '<table>';
 							// output data of each row
+							$tbcount = 0;
+							$passtracker = 5;
+							echo '<div id="header"><h2>Passives Ratings</h2></div><h3>SS</h3>';
+							echo '<div class="table-wrapper"><table>';
 							while($row = $result->fetch_assoc()) {
-							echo '<tr><td></td><td>Passive<br>(Clickable)</td><td>PVP</td><td>Farming</td></tr><tr><td><a onclick="modalFunction(\'' . $row["CharacterName"] . 'Modal\')"><span class="image"><img src="' .  $row["ImageLink"] . '" alt="" /></span></a></td><td><button onclick="modalFunction(\'' . $row["CharacterName"] . 'PModal\')">' . $row["Passive"] . '</button></td>
-							<td>'. $row["PVP"]. '</td><td>' . $row["Farming"] . '</td><div id="' . $row["CharacterName"] . 'PModal" class="modal"><div class="modal-content"><span class="close" onclick="closeButton(\'' . $row["CharacterName"] . 'PModal\')">&times;</span><p><span class="image"><img src="' .  $row["PassImageLink"] . '" alt="" /></span>
-							<br>' . $row["PassiveText"] . '<br><span class="image"><img src="' .  $row["CommImageLink"] . '" alt="" /></span><br>' . $row["CommandmentText"] . '</p></div></div></tr>';
+								if ($row["PassiveNum"] != $passtracker){
+									if($tbcount % 4 == 0){
+										echo '</table></div><h3>' . $row["Passive"] . '</h3><div class="table-wrapper"><table>';}
+									else{
+										echo '</tr></table></div><h3>' . $row["Passive"] . '</h3><div class="table-wrapper"><table>';}
+									$passtracker--;
+									$tbcount = 0;
+								}
+								if ($tbcount % 4 == 0){echo '<tr>';}
+								echo '<td><a onclick="modalFunction(\'' . $row["CharacterName"] . 'Modal\')"><span class="image"><img class="chartable" src="' .  $row["ImageLink"] . '" alt="" /></span></a></td><td>' . $row["Passive"] . '</td>';
+								if ($tbcount+1 % 4 == 0){echo '</tr>';}
+								$tbcount++;
 							}
-							echo '</table>';
+							if($tbcount % 4 == 0){
+								echo '</table></div>';}
+							else{
+								echo '</tr></table></div>';}
 						} else {
 							echo "0 results";
 						}
