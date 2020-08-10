@@ -776,6 +776,9 @@ input, select, textarea {
 
 		@media screen and (max-width: 736px) {
 
+			.chartable img {
+				width: 50%;
+			}
 			.image.main {
 				margin: 2rem 0;
 			}
@@ -784,6 +787,9 @@ input, select, textarea {
 
 		@media screen and (max-width: 480px) {
 
+			.chartable img {
+				width: 50%;
+			}
 			.image.main {
 				margin: 1.5rem 0;
 			}
