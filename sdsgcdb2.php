@@ -170,6 +170,7 @@
 									else{
 										echo '</tr></table></div><h3>' . $row["PVP"] . '</h3><div class="table-wrapper"><table>';}
 									$pvptracker--;
+									$tbcount = 0;
 								}
 								if ($tbcount % 4 == 0){echo '<tr>';}
 								echo '<td><a onclick="modalFunction(\'' . $row["CharacterName"] . 'Modal\')"><span class="image"><img class="chartable" src="' .  $row["ImageLink"] . '" alt="" /></span></a></td><td>' . $row["PVP"] . '</td>';
