@@ -158,14 +158,17 @@
 						$result = $conn->query($sql);
 
 						if ($result->num_rows > 0) {
-							echo '<div class="table-wrapper"><table>';
 							// output data of each row
 							$tbcount = 0;
 							$pvptracker = 5;
-							echo '<tr><h4>SS</h4></tr>';
+							echo '<h3>SS</h3>';
+							echo '<div class="table-wrapper"><table>';
 							while($row = $result->fetch_assoc()) {
 								if ($row["PVPNum"] != $pvptracker){
-									echo '<tr><td><h4>' . $row["PVP"] . '</h4></td></tr>';
+									if($tbcount % 4 == 0){
+										echo '</table></div><h3>' . $row["PVP"] . '</h3><div class="table-wrapper"><table>';}
+									else{
+										echo '</tr></table></div><h3>' . $row["PVP"] . '</h3><div class="table-wrapper"><table>';}
 									$pvptracker--;
 								}
 								if ($tbcount % 4 == 0){echo '<tr>';}
@@ -173,7 +176,10 @@
 								if ($tbcount+1 % 4 == 0){echo '</tr>';}
 								$tbcount++;
 							}
-							echo '</tr></table></div>';
+							if($tbcount % 4 == 0){
+								echo '</table></div>';}
+							else{
+								echo '</tr></table></div>';}
 						} else {
 							echo "0 results";
 						}
