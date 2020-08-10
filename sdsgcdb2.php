@@ -164,7 +164,8 @@
 							$pvptracker = 5;
 							echo '<tr><h4>SS</h4></tr>'
 							while($row = $result->fetch_assoc()) {
-								if ($row["PVPNum"] != $pvptracker){
+								$rowpvp = $row["PVPNum"];
+								if ($rowpvp != $pvptracker){
 									echo '<tr><td><h4>' . $row["PVP"] . '</h4></td></tr>';
 									$pvptracker--;
 								}
