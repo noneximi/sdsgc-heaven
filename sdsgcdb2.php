@@ -153,14 +153,14 @@
 							die("Connection failed: " . $conn->connect_error);
 						}
 
-						$sql = "SELECT `CharacterName`, `ImageLink`, `PVP`, `PVPNum`, `Farming`, `Passive` FROM aae99dbcx92f7n09.BaseCharacterStats ORDER BY `PVPNum` DESC";
+						$sql = "SELECT `CharacterName`, `ImageLink`, `PVP`, `PVPNum` FROM aae99dbcx92f7n09.BaseCharacterStats ORDER BY `PVPNum` DESC";
 						$result = $conn->query($sql);
 
 						if ($result->num_rows > 0) {
 							echo '<table><tr>';
 							// output data of each row
 							while($row = $result->fetch_assoc()) {
-							echo '<td></td><td>PVP</td><td>Farming</td><td>Passive</td></tr><tr><td><a onclick="modalFunction(\'' . $row["CharacterName"] . 'Modal\')"><span class="image"><img src="' .  $row["ImageLink"] . '" alt="" /></span></a></td><td>' . $row["PVP"] . '</td><td>'. $row["Farming"]. '</td><td>' . $row["Passive"] . '</td>';
+							echo '<td><a onclick="modalFunction(\'' . $row["CharacterName"] . 'Modal\')"><span class="image"><img src="' .  $row["ImageLink"] . '" alt="" /></span></a></td><td>' . $row["PVP"] . '</td>';
 							}
 							echo '</tr></table>';
 						} else {
