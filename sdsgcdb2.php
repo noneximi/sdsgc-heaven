@@ -157,10 +157,14 @@
 						$result = $conn->query($sql);
 
 						if ($result->num_rows > 0) {
-							echo '<table><tr>';
+							echo '<table>';
 							// output data of each row
+							$tbcount = 0;
 							while($row = $result->fetch_assoc()) {
-							echo '<td><a onclick="modalFunction(\'' . $row["CharacterName"] . 'Modal\')"><span class="image"><img src="' .  $row["ImageLink"] . '" alt="" /></span></a></td><td>' . $row["PVP"] . '</td>';
+								if ($tbcount % 4 == 0){echo '<tr>';}
+								echo '<td><a onclick="modalFunction(\'' . $row["CharacterName"] . 'Modal\')"><span class="image"><img src="' .  $row["ImageLink"] . '" alt="" /></span></a></td><td>' . $row["PVP"] . '</td>';
+								if ($tbcount % 4 == 0){echo '</tr>';}
+								$tbcount++;
 							}
 							echo '</tr></table>';
 						} else {
