@@ -84,7 +84,7 @@
 					<div class="content">
 					 <div class="inner">
 						 <h1>SDSGC Character Ratings</h1>
-						 <h2>under maintenance</h2>
+						 <h2>(under maintenance)</h2>
 						 <h4>Sort All SDSGC Characters' Ratings (Click Character Images for Info)</h4>
 						 <h4>Note: Max Stats Data is [Ungeared] [Lvl 80] [6* Awakened] [Ultimate Lvl 1] [No Sacred Treasures]</h4>
 						 <p>Data sources: <a href="https://docs.google.com/spreadsheets/d/1LPWgA2gJWagYyDwtXKbzQ0G5xuZ0Q4_p2Hvrs01fuM4/" target=_blank>Google Sheets</a>, <a href="https://gcdatabase.com/index.html" target=_blank>GCDatabase</a>, <a href="https://gamewith.jp/7taizai/article/show/158813" target=_blank>GameWith jp</a></p>
@@ -161,7 +161,13 @@
 							echo '<div class="table-wrapper"><table>';
 							// output data of each row
 							$tbcount = 0;
+							$pvptracker = 5;
+							echo '<tr><h4>SS</h4></tr>'
 							while($row = $result->fetch_assoc()) {
+								if ($row["PVPNum"] != $pvptracker){
+									echo '<tr><h4>' . $row["PVP"] . '</h4></tr>';
+									$pvptracker--;
+								}
 								if ($tbcount % 4 == 0){echo '<tr>';}
 								echo '<td><a onclick="modalFunction(\'' . $row["CharacterName"] . 'Modal\')"><span class="image"><img class="chartable" src="' .  $row["ImageLink"] . '" alt="" /></span></a></td><td>' . $row["PVP"] . '</td>';
 								if ($tbcount+1 % 4 == 0){echo '</tr>';}
