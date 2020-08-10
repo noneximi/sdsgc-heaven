@@ -165,7 +165,7 @@
 							echo '<tr><h4>SS</h4></tr>'
 							while($row = $result->fetch_assoc()) {
 								if ($row["PVPNum"] != $pvptracker){
-									echo '<tr><h4>' . $row["PVP"] . '</h4></tr>';
+									echo '<tr><td><h4>' . $row["PVP"] . '</h4></td></tr>';
 									$pvptracker--;
 								}
 								if ($tbcount % 4 == 0){echo '<tr>';}
