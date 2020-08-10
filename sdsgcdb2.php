@@ -215,9 +215,9 @@
 							while($row = $result->fetch_assoc()) {
 								if ($row["FarmingNum"] != $farmtracker){
 									if($tbcount % 4 == 0){
-										echo '</table></div><h3>' . $row["PVP"] . '</h3><div class="table-wrapper"><table>';}
+										echo '</table></div><h3>' . $row["Farming"] . '</h3><div class="table-wrapper"><table>';}
 									else{
-										echo '</tr></table></div><h3>' . $row["PVP"] . '</h3><div class="table-wrapper"><table>';}
+										echo '</tr></table></div><h3>' . $row["Farming"] . '</h3><div class="table-wrapper"><table>';}
 									$farmtracker--;
 									$tbcount = 0;
 								}
