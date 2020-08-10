@@ -22,6 +22,11 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="apple-touch-icon" href="https://noneximi.github.io/sdsgc-heaven/apple-touch-icon.png">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			span.dbitem {
+				display: inline-block;
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -43,17 +48,21 @@
 				 </div>
 
 					<nav style="text-align: left;">
-						<p><button type = "button" class="button primary" onclick= 'location.href="https://sdsgc-heaven-db.herokuapp.com/sdsgcdb.php"'><i class="fas fa-chart-bar fa-lg"></i>Char Stats</button>
-						 - Sort character stats (i.e. max cc)</p>
-
-						<p><button type = "button" class="button primary" onclick= 'location.href="https://sdsgc-heaven-db.herokuapp.com/sdsgcdb2.php"'><i class="fas fa-list-ol fa-lg"></i>Tier Ratings</button>
-						 - View tier lists organized by pvp, farming, or character passive ratings</p>
-
-						<p><button type = "button" class="button primary" onclick= 'location.href=""'><i class="fas fa-cookie-bite fa-lg"></i>Cooking</button>
-						 - Info on all dishes and their character affinity (wip)</p>
-
-						<p><button type = "button" class="button primary" onclick= 'location.href=""'><i class="fas fa-edit fa-lg"></i>Skills Data</button>
-						 - Filter by character skill or passive types with tags(wip)</p>
+						<span class="dbitem"><button type = "button" class="button primary" onclick= 'location.href="https://sdsgc-heaven-db.herokuapp.com/sdsgcdb.php"'><i class="fas fa-chart-bar fa-lg"></i>Char Stats</button></span>
+						<i class="fas fa-ellipsis-h"></i>
+						<span class="dbitem">Sort character stats (i.e. max cc)</span>
+						<hr>
+						<span class="dbitem"><button type = "button" class="button primary" onclick= 'location.href="https://sdsgc-heaven-db.herokuapp.com/sdsgcdb2.php"'><i class="fas fa-list-ol fa-lg"></i>Tier Ratings</button></span>
+						<i class="fas fa-ellipsis-h"></i>
+						<span class="dbitem">View tier lists organized by pvp, farming, or character passive ratings</span>
+						<hr>
+						<span class="dbitem"><button type = "button" class="button primary" onclick= 'location.href=""'><i class="fas fa-cookie-bite fa-lg"></i>Cooking</button></span>
+						<i class="fas fa-ellipsis-h"></i>
+						<span class="dbitem">Info on all dishes and their character affinity (wip)</span>
+						<hr>
+						<span class="dbitem"><button type = "button" class="button primary" onclick= 'location.href=""'><i class="fas fa-edit fa-lg"></i>Skills Data</button></span>
+						<i class="fas fa-ellipsis-h"></i>
+						<span class="dbitem">Filter by character skill or passive types with tags(wip)</span>
 					</nav>
 				</div>
 
