@@ -161,14 +161,14 @@
 							// output data of each row
 							$tbcount = 0;
 							$pvptracker = 5;
-							echo '<div id="header"><h2>SS</h2></div>';
+							echo '<div id="header"><h2>PVP Ratings</h2><h3>SS</h3></div>';
 							echo '<div class="table-wrapper"><table>';
 							while($row = $result->fetch_assoc()) {
 								if ($row["PVPNum"] != $pvptracker){
 									if($tbcount % 4 == 0){
-										echo '</table></div><div id="header"><h2>' . $row["PVP"] . '</h2></div><div class="table-wrapper"><table>';}
+										echo '</table></div><div id="header"><h3>' . $row["PVP"] . '</h3></div><div class="table-wrapper"><table>';}
 									else{
-										echo '</tr></table></div><div id="header"><h2>' . $row["PVP"] . '</h2></div><div class="table-wrapper"><table>';}
+										echo '</tr></table></div><div id="header"><h3>' . $row["PVP"] . '</h3></div><div class="table-wrapper"><table>';}
 									$pvptracker--;
 									$tbcount = 0;
 								}
