@@ -163,7 +163,7 @@
 							while($row = $result->fetch_assoc()) {
 								if ($tbcount % 4 == 0){echo '<tr>';}
 								echo '<td><a onclick="modalFunction(\'' . $row["CharacterName"] . 'Modal\')"><span class="image"><img src="' .  $row["ImageLink"] . '" alt="" /></span></a></td><td>' . $row["PVP"] . '</td>';
-								if ($tbcount % 4 == 0){echo '</tr>';}
+								if ($tbcount+1 % 4 == 0){echo '</tr>';}
 								$tbcount++;
 							}
 							echo '</tr></table>';
