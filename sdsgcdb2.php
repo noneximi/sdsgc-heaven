@@ -83,8 +83,8 @@
 
 					<div class="content">
 					 <div class="inner">
-						 <h1>SDSGC Character Ratings</h1>
-						 <h4>Sort All SDSGC Characters' Ratings (Click Character Images for Info)</h4>
+						 <h1>Character Ratings</h1>
+						 <h4>Sort All Characters' Ratings (Click Character Images for Info)</h4>
 						 <p>Note: Max Stats Data is [Ungeared] [Lvl 80] [6* Awakened] [Ultimate Lvl 1] [No Sacred Treasures]<br>
 						 Data sources: <a href="https://docs.google.com/spreadsheets/d/1LPWgA2gJWagYyDwtXKbzQ0G5xuZ0Q4_p2Hvrs01fuM4/" target=_blank>Google Sheets</a>, <a href="https://gcdatabase.com/index.html" target=_blank>GCDatabase</a>, <a href="https://gamewith.jp/7taizai/article/show/158813" target=_blank>GameWith jp</a></p>
 					 </div>
