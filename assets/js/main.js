@@ -7,6 +7,9 @@
 $(function (){
   $("#mainheader").load("https://noneximi.github.io/sdsgc-heaven/mainheader.html");
 });
+$(function (){
+  $("#altheader").load("https://noneximi.github.io/sdsgc-heaven/altheader.html");
+});
 function autocomplete(inp, arr) {
   /*the autocomplete function takes two arguments,
   the text field element and an array of possible autocompleted values:*/
