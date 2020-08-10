@@ -10,8 +10,8 @@ $(function (){
 $(function (){
   $("#altheader").load("https://noneximi.github.io/sdsgc-heaven/altheader.html");
 });
-function dbloaded("dbmessage"){
-  var lm = document.getElementById(mess);
+function dbloaded(){
+  var lm = document.getElementById("dbmessage");
   lm.style.display = "none";
 }
 function autocomplete(inp, arr) {
