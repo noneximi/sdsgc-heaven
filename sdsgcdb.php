@@ -49,9 +49,7 @@
 					if ($conn->connect_error) {
 						die("Connection failed: " . $conn->connect_error);
 					}
-					echo "Connected to $dbname successfully (pls ignore this mssg)<br>";
-					echo "Page may take a moment to load";
-
+					echo '<p id="dbmessage" onload="dbloaded(\'dbmessage\')">Connected to ' . $dbname . ' successfully (pls ignore this mssg)<br>Page may take a moment to load<p>';
 					$sql = "SELECT * FROM aae99dbcx92f7n09.BaseCharacterStats ORDER BY `CharacterName` DESC";
 					$result = $conn->query($sql);
 
