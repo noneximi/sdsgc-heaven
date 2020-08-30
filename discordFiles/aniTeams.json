@@ -1,0 +1,17 @@
+
+{
+    "image":{
+        "url":"https:\/\/s7.gifyu.com\/images\/ezgif.com-video-to-gif-1000c51518894e35d0.gif",
+        "proxy_url":"https:\/\/images-ext-1.discordapp.net\/external\/rihJ67bzPawXjqn_bhuUk_3Ev6mInsgoZD4S4XFgBAA\/https\/s7.gifyu.com\/images\/ezgif.com-video-to-gif-1000c51518894e35d0.gif",
+        "width":600,
+        "height":519
+    },
+    "author":{
+        "name":"Guide on AniGame Teams",
+        "icon_url":"https:\/\/cdn.discordapp.com\/avatars\/718465212776448081\/16b6a405dfc2fe18b0e374841160c7cd.webp",
+        "proxy_icon_url":"https:\/\/images-ext-1.discordapp.net\/external\/5LMdNyioSF2RWvCznt7C5HJN1d74AS0n0fC2vbSIc3I\/https\/cdn.discordapp.com\/avatars\/718465212776448081\/16b6a405dfc2fe18b0e374841160c7cd.webp"
+    },
+    "color":5628922,
+    "type":"rich",
+    "description":"__What are teams used for?__\n\u279d Teams are used for dungeon battling A.I. opponents (command: ``.dg bt``), team-fighting against your friends (command: ``.dg fight <tag friend here>``) and most importantly, raiding. (Follow this guide to make your very first team, and then you'll learn how to raid using one of our guides.)\n\n__How do I make a team?__\n\u279d First of all, decide on a name. Your team name must be under 15 characters, and cannot contain special symbols. You cannot create a team with the same name as well.\n\n\u279d Once you have decided on a name, it's now time to make your very first team! Simply type ``.team create <team name>`` and voila, you have created your very first team.\n\n__How do I add cards into my team?__\n\u279d A team is not complete without members in it. A team in AniGame limits you to have **3** characters in it. Of course, you can change your team comp whenever you want. \n\n\u279d Once you have **3** characters ready, use ``.team set <card no. from the inventory>``. And from there on out, follow the instructions shown on screen once the command is executed.\n\n\u279d Do this to the other **2** character cards you wish to have in your team. Once it's done, use ``.team select <team name (case sensitive)>`` to select your team. And there you go, your team is now complete!\n\n__How do I view my team?__\n\u279d When you have a team selected, using ``.team`` will view the selected team and it's stats.\n\n\u279d If you want to view another team from your teams, simply use ``.team view <team name (case sensitive)>`` to view it."
+}
